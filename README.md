@@ -4,4 +4,4 @@ Each menu item should have its own main HTML file. Let’s say that index.html i
 
 We can create different components (such as views/leftNav.html or views/simpleTable.html) and we can add these components to the main HTML files (image below). 
 
-!(https://ibb.co/RQsW0Mh)
+![Image1](https://ibb.co/RQsW0Mh)
