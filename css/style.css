@@ -64,8 +64,6 @@ body{
     font-weight: 700;
 }
 
-
-
 /* Menu item*/
 #sidebar-container .list-group a {
     height: 50px;
@@ -148,6 +146,16 @@ body{
 
 .sidebar-expanded{
     display: block;
+}
+
+
+.menu-logo{
+    background-image: url(../img/Logo.svg);
+    width: 110px;
+    height: 35px;
+    background-repeat: no-repeat;
+    margin-top: 41px;
+    margin-bottom: 57px;
 }
 
 .menu-icon{
