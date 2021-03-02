@@ -4,4 +4,4 @@ Each menu item should have its own main HTML file. Let’s say that index.html i
 
 We can create different components (such as views/leftNav.html or views/simpleTable.html) and we can add these components to the main HTML files (image below). 
 
-![Image1](fannicsincsak.github.io/DataProject/img/image4.png)
+![Image1](/img/image4.png)
