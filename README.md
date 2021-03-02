@@ -11,6 +11,7 @@ This way, each and every main HTML file is going to stay clean and we don’t re
 All of these components (such as views/simpleTable.html) will need to be connected to some type of javascript files (as per component type we can organize all of the js script into one file, eg. we have 10 tables and all of the js files connected to each and every table could be organized into one js file). 
 Example: 
 views/simpleTable.html is connected to scripts/tables.js file:
+
 ![Image1](/img/image3.png)
 
 You can see that the script connected to the example table (simpleTable.html) has reference pointing to data/myData. Basically this way this table is filled with JSON formatted data:
