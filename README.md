@@ -17,4 +17,4 @@ You can see that the script connected to the example table (simpleTable.html) ha
 ![Image1](/img/image2.png)
 
 SUMMARY:
-![Image1](/img/image1.png)
+![Image1](/img/image1.jpg)
