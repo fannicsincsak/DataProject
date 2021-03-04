@@ -322,9 +322,24 @@ table.dataTable thead .sorting_desc{
 
 }
 
+.title-row{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
 .table-component{
     box-shadow: 0px 0px 4px rgba(10, 2, 3, 0.1);
     border-radius: 8px;
+}
+
+.dataTables_scrollBody{
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+table.dataTable.hover tbody tr:hover,
+table.dataTable.display tbody tr:hover{
+    background-color: #F5F6F8;
 }
 
 /*CHARTS*/
