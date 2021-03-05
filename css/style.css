@@ -327,9 +327,14 @@ table.dataTable thead .sorting_desc{
     border-top-right-radius: 8px;
 }
 
-.table-component{
+.table-component,
+.chart-component{
     box-shadow: 0px 0px 4px rgba(10, 2, 3, 0.1);
     border-radius: 8px;
+}
+
+.chart-component .title-row{
+    border-bottom: solid 1px #EAEDF2;
 }
 
 .dataTables_scrollBody{
@@ -345,7 +350,10 @@ table.dataTable.display tbody tr:hover{
 /*CHARTS*/
 canvas{
     background: white;
-    border-radius: 8px;
-    box-shadow: 0px 0px 4px rgba(10, 2, 3, 0.1);
+    position: relative;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
 }
+
+
 

@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <title>Pilot</title>
-        <!--CSS FILES-->
+
+        <!-------------------------------------------CSS FILES------------------------------------------->
         <!--Font: Roboto-->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -18,61 +19,63 @@
         <!--Data Table-->
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.css">
 
-        <!--SCRIPTS-->
-        <!--jQuery-->
-        <script type="text/javascript" src="scripts/jquery-3.5.1.min.js"></script>
-        <!--Bootstrap-->
-        <script type="text/javascript" src="js/bootstrap.js"></script>
-        <!--Include HTML in HTML-->
-        <script type="text/javascript" src="scripts/include.js"></script>
-        <!--Menu Collapse (Added to leftNav.html)-->
-        <!--<script type="text/javascript" src="scripts/menuCollapse.js"></script>-->
-        <!--Tables JS (Added to all the table-based html files-->
-        <!--<script type="text/javascript" src="scripts/tables.js"></script>-->
-        <!--FontAwesome-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-1/js/all.min.js" integrity="sha512-f5QPU3RiT/dsiLME06F2IxfAW8EujygVNj2rPK93XqHm4dvuB0p/DnNiVgKQE2fxxNeASmUA9+5NjkKYk1loHg==" crossorigin="anonymous"></script>
-        <!--Data Table-->
-        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.js"></script>
-        <!--Chart JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.min.js" integrity="sha512-SuxO9djzjML6b9w9/I07IWnLnQhgyYVSpHZx0JV97kGBfTIsUYlWflyuW4ypnvhBrslz1yJ3R+S14fdCWmSmSA==" crossorigin="anonymous"></script>
     </head>
 
     <body>
 
-        <!-- Full Width of screen: we need to place the menu and the content area next to each other-->
-        <div class="row" id="body-row">
 
-            <!--Left Menu - 230px of the screen (width)-->
-            <div data-include="leftNav" class="nav-container"></div>
+        <div class="container-fluid p-0">
+            <div class="row" id="body-row">
+                <div data-include="leftNav"></div>
+                <!-- MAIN -->
+                <div class="col">
 
-            <!--Container for the rest of the width of the screen -->
-            <div class="col p-4">
 
 <!-------------------------------------------CONTENT TO EDIT------------------------------------------->
 
-                <!--SIMPLE TABLE-->
-                <!--Sources:
-                - table.js file loads from scrips/tables.js - the data source is defined here
-                - data loads from data/myData;
-                -->
-                <p>The table is configured by the scrips/table.js file: this defines the data source</p>
-                <p>The data source can be found in data/myData: it's a simple txt file</p>
 
-                <!--Table-->
-                <div class="section-title">Input Features and Predictions for Selected Date</div>
-                <div data-include="simpleTable"></div>
+                    <!--SIMPLE TABLE-->
+                    <!--Sources:
+                    - table.js file loads from scrips/tables.js - the data source is defined here
+                    - data loads from data/myData;
+                    -->
+                    <p>The table is configured by the scrips/table.js file: this defines the data source</p>
+                    <p>The data source can be found in data/myData: it's a simple txt file</p>
 
-                <!--Chart-->
-                <div class="section-title">Input Features and Predictions for Selected Date</div>
-                <div data-include="simpleBarChart"></div>
+                    <!--Table-->
+                    <div class="section-title">Input Features and Predictions for Selected Date</div>
+                    <div data-include="simpleTable"></div>
 
-
+                    <!--Chart-->
+                    <div class="section-title">Input Features and Predictions for Selected Date</div>
+                    <div data-include="simpleBarChart"></div>
 
 
 <!-------------------------------------------CONTENT ENDS------------------------------------------->
+
+
+                </div>
             </div>
         </div>
-
     </body>
+
+
+    <!-------------------------------------------SCRIPTS------------------------------------------->
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <!--Bootstrap-->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!--Include HTML in HTML-->
+    <script type="text/javascript" src="scripts/include.js"></script>
+    <!--Menu Collapse (Added to leftNav.html)-->
+    <script type="text/javascript" src="scripts/menu.js"></script>
+    <!--Tables JS (Added to all the table-based html files-->
+    <!--<script type="text/javascript" src="scripts/tables.js"></script>-->
+    <!--FontAwesome-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-1/js/all.min.js" integrity="sha512-f5QPU3RiT/dsiLME06F2IxfAW8EujygVNj2rPK93XqHm4dvuB0p/DnNiVgKQE2fxxNeASmUA9+5NjkKYk1loHg==" crossorigin="anonymous"></script>
+    <!--Data Table-->
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.js"></script>
+    <!--Chart JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.min.js" integrity="sha512-SuxO9djzjML6b9w9/I07IWnLnQhgyYVSpHZx0JV97kGBfTIsUYlWflyuW4ypnvhBrslz1yJ3R+S14fdCWmSmSA==" crossorigin="anonymous"></script>
 
 </html>
