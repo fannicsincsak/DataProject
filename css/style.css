@@ -348,12 +348,26 @@ table.dataTable.display tbody tr:hover{
 }
 
 /*CHARTS*/
-canvas{
+.ct-chart{
     background: white;
-    position: relative;
-    border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
+.ct-series-b .ct-bar,
+.ct-series-b .ct-line,
+.ct-series-b .ct-point,
+.ct-series-b .ct-slice-donut{
+    stroke: #00A5BB !important;
+}
 
+.ct-series-a .ct-bar,
+.ct-series-a .ct-line,
+.ct-series-a .ct-point,
+.ct-series-a .ct-slice-donut{
+    stroke: #D5F0F3 !important;
+}
 
+.ct-horizontal ~ .ct-horizontal {
+    stroke: none;
+}
