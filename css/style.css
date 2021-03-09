@@ -6,6 +6,9 @@ a, div, p, li, ul, span{
 
 body{
     background-color: #F7F9FC !important;
+}
+
+.body-content{
     padding-bottom: 80px;
 }
 
@@ -53,6 +56,12 @@ button:focus {
     padding-bottom: 0;
     padding-left: 36px;
     padding-right: 20px;
+    overflow: hidden;
+    height: 100%;
+}
+
+#sidebar-container .list-group{
+    position: fixed;
 }
 
 /* Sidebar sizes when expanded and expanded */
@@ -100,10 +109,29 @@ button:focus {
 
 .list-group-item{
     border: none !important;
-    padding: 14px 16px !important;
-    border-radius: 12px !important;
+    padding: 14px 16px;
+    border-radius: 12px;
     margin-bottom: 4px !important;
+    display: flex !important;
+    align-items: center !important;
 }
+
+.list-group-item .menu-collapsed{
+    line-height: 18px;
+}
+
+.sidebar-collapsed .list-group-item{
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.sidebar-collapsed .logo-separator,
+.sidebar-collapsed .list-group-item:first-child{
+    border: none !important;
+    padding-right: 0 !important;
+    padding-left: 8px !important;
+}
+
 .list-group-item.active{
     background-color: #00A5BB !important;
     color: white !important;
@@ -348,10 +376,24 @@ table.dataTable.display tbody tr:hover{
 }
 
 /*CHARTS*/
+#chart1,
+#chart2{
+    height: 450px;
+}
+
+#chart1 .ct-grids .ct-horizontal,
+#chart2 .ct-grids .ct-horizontal{
+    display: none;
+}
+
 .ct-chart{
     background: white;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
+}
+
+.ct-chart svg{
+    margin-top: 20px;
 }
 
 .ct-series-b .ct-bar,
@@ -371,3 +413,43 @@ table.dataTable.display tbody tr:hover{
 .ct-horizontal ~ .ct-horizontal {
     stroke: none;
 }
+
+.ct-label{
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 12px !important;
+    color: #555A64 !important;
+}
+
+.ct-grids line{
+    color: #EAEDF2 !important;
+    stroke: #EAEDF2;
+}
+
+/*CHART LEGEND*/
+.ct-legend {
+    position: relative;
+    z-index: 10;
+}
+.ct-legend li {
+    position: relative;
+    padding-left: 23px;
+    margin-bottom: 3px;
+}
+.ct-legend li:before {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    left: 0;
+    content: '';
+    border: 3px solid transparent;
+    border-radius: 2px;
+}
+.ct-legend li.inactive:before {
+    background: transparent;
+}
+.ct-legend.ct-legend-inside {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
