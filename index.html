@@ -20,6 +20,10 @@
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.css">
         <!--Chart CSS 2-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.11.4/chartist.min.css" integrity="sha512-V0+DPzYyLzIiMiWCg3nNdY+NyIiK9bED/T1xNBj08CaIUyK3sXRpB26OUCIzujMevxY9TRJFHQIxTwgzb0jVLg==" crossorigin="anonymous" />
+        <!--jQuery-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ==" crossorigin="anonymous"></script>
+        <!--Select 2-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw==" crossorigin="anonymous" />
     </head>
 
     <body>
@@ -27,23 +31,31 @@
 
         <div class="container-fluid p-0">
             <div class="row" id="body-row">
-                <div data-include="leftNav"></div>
+                <div data-include="leftNav" style="z-index: 2"></div>
                 <!-- MAIN -->
                 <div class="col body-content">
 
 
 <!-------------------------------------------CONTENT TO EDIT------------------------------------------->
 
+                    <!--Header-->
+                    <div class="header">
+                        <div class="header-title">Fetch Historical Predictions</div>
+                        <div class="row">
+                            <div class="col-md-5">
+                                <label class="select-label" for="id_label_single">
+                                    Select date
+                                    <select class="js-example-basic-single select2-dates form-control" id="id_label_single" style="width: 50%">
+                                        <option value="one" disabled="disabled">Select</option>
+                                        <option value="two">February 16, 2021 16:00</option>
+                                        <option value="three">February 15, 2021 16:00</option>
+                                    </select>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
 
-                    <!--SIMPLE TABLE-->
-                    <!--Sources:
-                    - table.js file loads from scrips/tables.js - the data source is defined here
-                    - data loads from data/myData;
-                    -->
-                    <p>The table is configured by the scrips/table.js file: this defines the data source</p>
-                    <p>The data source can be found in data/myData: it's a simple txt file</p>
-
-                    <!--Table-->
+                    <!-- Simple Table-->
                     <div class="section-title">Input Features and Predictions for Selected Date</div>
                     <div data-include="simpleTable"></div>
 
@@ -66,8 +78,7 @@
 
 
     <!-------------------------------------------SCRIPTS------------------------------------------->
-    <!--jQuery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <!--Bootstrap-->
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <!--Include HTML in HTML-->
@@ -86,4 +97,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chartist-plugin-legend/0.6.2/chartist-plugin-legend.min.js.map" ></script>
     <!--Custom Chart JS-->
     <script type="text/javascript" src="scripts/charts.js"></script>
+    <!--Select 2-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js" integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A==" crossorigin="anonymous"></script>
+    <!--Custom Select JS-->
+    <!--<script type="text/javascript" src="scripts/select.js"></script>-->
+    <!--Updates all relevant elements when menu expands/minimizes -->
+    <script type="text/javascript" src="scripts/update.js"></script>
+
+<script>
+
+    $(".select2-dates").select2({
+        width: '100%',
+        minimumResultsForSearch: -1
+    });
+</script>
+
 </html>

@@ -2,7 +2,7 @@
 $('#body-row .collapse').collapse('hide');
 
 // Collapse/Expand icon
-$('#collapse-icon').addClass('fa-angle-double-left');
+$('#collapse-icon').addClass('menu-icon-minimize');
 
 // Collapse click
 $('[data-toggle=sidebar-colapse]').click(function() {
@@ -24,5 +24,5 @@ function SidebarCollapse () {
     }
 
     // Collapse/Expand icon
-    $('#collapse-icon').toggleClass('fa-angle-double-left fa-angle-double-right');
+    $('#collapse-icon').toggleClass('menu-icon-minimize menu-icon-expand');
 }
