@@ -1,6 +1,6 @@
 # DataProject
 
-Contents
+### Contents
 1. Structural Overview
 2. HTML Components
 3. HTML Structural Settings
@@ -27,16 +27,16 @@ SUMMARY:
 ![Image1](/img/image1.jpg)
 
 
-##Structural Overview
+## Structural Overview
 
 
-##HTML Components
+## HTML Components
 
 
-##HTML Structural Settings
+## HTML Structural Settings
 
 
-##Javascript and Data files
+## Javascript and Data files
 
 
 
