@@ -27,16 +27,16 @@ SUMMARY:
 ![Image1](/img/image1.jpg)
 
 
-## Structural Overview
+## 1. Structural Overview
 
 
-## HTML Components
+## 2. HTML Components
 
 
-## HTML Structural Settings
+## 3. HTML Structural Settings
 
 
-## Javascript and Data files
+## 4. Javascript and Data files
 
 
 
