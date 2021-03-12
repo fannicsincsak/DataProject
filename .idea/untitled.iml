@@ -10,5 +10,6 @@
     <orderEntry type="library" name="jquery.dataTables" level="application" />
     <orderEntry type="library" name="chartist-plugin-legend" level="application" />
     <orderEntry type="library" name="select2" level="application" />
+    <orderEntry type="library" name="ResizeSensor" level="application" />
   </component>
 </module>

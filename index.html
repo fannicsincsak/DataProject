@@ -100,16 +100,22 @@
     <!--Select 2-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js" integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A==" crossorigin="anonymous"></script>
     <!--Custom Select JS-->
-    <!--<script type="text/javascript" src="scripts/select.js"></script>-->
-    <!--Updates all relevant elements when menu expands/minimizes -->
-    <script type="text/javascript" src="scripts/update.js"></script>
+    <script type="text/javascript" src="scripts/select.js"></script>
+    <!--Resize Sensor-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/css-element-queries/1.2.3/ResizeSensor.js" integrity="sha512-TH1YiqLIcRRGn+EOLBXfHtoZfGaPGROB6sEcSC0TK+72bc7Xhn9P/JqaSX+3jw3mxOSdXRuAIZjedCJQtmYfWA==" crossorigin="anonymous"></script>
 
 <script>
 
     $(".select2-dates").select2({
         width: '100%',
-        minimumResultsForSearch: -1
+        minimumResultsForSearch: -1,
     });
 </script>
+
+    <script>
+        $('#button-collapse').on('click', function () {
+            $('#simpleTable').DataTable().columns.adjust();
+        })
+    </script>
 
 </html>

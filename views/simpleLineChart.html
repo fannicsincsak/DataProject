@@ -1,11 +1,11 @@
-<div class="chart-component">
+<div class="chart-component" id="chart-container2">
     <!--Title of Chart-->
     <div class="title-row">
         <div class="component-title">Title</div>
         <button class="button-small">Download</button>
     </div>
     <!--Chart-->
-    <div class="ct-chart ct-golden-section" id="chart2"></div>
+    <div class="ct-chart ct-golden-section ct-chart2" id="chart2"></div>
 </div>
 
 <!------------------------------------DEPENDENCIES FOR THIS FILE ONLY------------------------------------>
@@ -31,5 +31,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/chartist-plugin-legend/0.6.2/chartist-plugin-legend.min.js.map" ></script>
 <!--Custom Chart JS-->
 <script type="text/javascript" src="scripts/charts.js"></script>
-<!--Updates all relevant elements when menu expands/minimizes -->
-<script type="text/javascript" src="scripts/update.js"></script>
+<!--Resize Sensor-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/css-element-queries/1.2.3/ResizeSensor.js" integrity="sha512-TH1YiqLIcRRGn+EOLBXfHtoZfGaPGROB6sEcSC0TK+72bc7Xhn9P/JqaSX+3jw3mxOSdXRuAIZjedCJQtmYfWA==" crossorigin="anonymous"></script>
+
+<script>
+    new ResizeSensor($('#chart-container2'), function(){
+        document.querySelector(".ct-chart2").__chartist__.update()
+    });
+</script>

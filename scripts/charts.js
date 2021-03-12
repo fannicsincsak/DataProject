@@ -49,3 +49,10 @@ new Chartist.Bar('#chart1', data1, options, responsiveOptions);
 
 // Create Chart #2
 new Chartist.Line('#chart2', data2, options, responsiveOptions);
+
+
+//document.getElementById("button-collapse").addEventListener("click",function(){
+//    document.querySelector(".ct-chart").style.display = "block";
+//    //Update the chart
+//    document.querySelector(".ct-chart").__chartist__.update();
+//})

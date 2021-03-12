@@ -1,13 +1,13 @@
-<div class="table-component">
+<div class="table-component" id="table-container-1" style="width:100%">
     <!--Title of Table-->
     <div class="title-row">
         <div class="component-title">Title</div>
         <button class="button-small">Download</button>
     </div>
     <!--Table-->
-    <table id="example" class="display" style="width:100%">
-        <thead>
-        <tr>
+    <table id="simpleTable" class="display table-title-row" style="width:100%">
+        <thead style="width:100%">
+        <tr style="width:100%">
             <th>Name</th>
             <th>Position</th>
             <th>Office</th>
@@ -29,3 +29,11 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.js"></script>
 <script type="text/javascript" src="scripts/tables.js"></script>
+<!--Resize Sensor-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/css-element-queries/1.2.3/ResizeSensor.js" integrity="sha512-TH1YiqLIcRRGn+EOLBXfHtoZfGaPGROB6sEcSC0TK+72bc7Xhn9P/JqaSX+3jw3mxOSdXRuAIZjedCJQtmYfWA==" crossorigin="anonymous"></script>
+
+<script>
+    $('#button-collapse').on('click', function () {
+        $('#simpleTable').DataTable().columns.adjust();
+    })
+</script>

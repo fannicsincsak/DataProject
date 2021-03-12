@@ -1,12 +1,13 @@
 //Scroll Table
 $(document).ready(function() {
-    $('#example').DataTable( {
+    $('#simpleTable').DataTable( {
         "scrollY": 300,
         "scrollX": true,
         "paging": false,
         "searching": false,
         "info": false,
         "ajax": "data/myData",
+        "autoWidth": true,
         "columns": [
             { "data": "name" },
             { "data": "position" },
@@ -17,3 +18,6 @@ $(document).ready(function() {
         ]
     } );
 } );
+
+
+
