@@ -1,5 +1,11 @@
 # DataProject
 
+Contents
+1. Structural Overview
+2. HTML Components
+3. HTML Structural Settings
+4. Javascript and Data files
+
 Each menu item should have its own main HTML file. Let’s say that index.html is going to be the main HTML of the History (Fetch Historical Predictions) page.
 
 We can create different components (such as views/leftNav.html or views/simpleTable.html) and we can add these components to the main HTML files (image below). 
@@ -19,3 +25,21 @@ You can see that the script connected to the example table (simpleTable.html) ha
 
 SUMMARY:
 ![Image1](/img/image1.jpg)
+
+
+##Structural Overview
+
+
+##HTML Components
+
+
+##HTML Structural Settings
+
+
+##Javascript and Data files
+
+
+
+
+
+
