@@ -212,6 +212,7 @@ You don't need to edit the:
 * responsiveOptions variables. 
 
 We only have two options left: 
+
 **A. The data variables**
 ```javascript
 // Simple Bar Chart Data
