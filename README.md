@@ -167,10 +167,19 @@ If you need multiple components on the same HTML page, then you would need to co
 ```
 
 * *I don't need a title at the top of my component:*
+If you don't need the title at the top of you component, then please delete the title div: 
 
+```HTML
+<div class="section-title">This is a Simple Line Chart</div>
+```
+Therefore the code that you use would look like this:
+```HTML
+<!--Paste your components below-->
 
+<div data-include="simpleLineChart"></div>
 
-**C. Simple Line Chart Component** 
+<!--Don't paste components below-->
+```
 
 
 ## 4. Javascript and Data Files
