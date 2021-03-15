@@ -3,9 +3,9 @@
 ### Contents
 [1. Structural Overview](#1-structural-overview)
 
-[2. HTML Components](#2-html-components)
+[2. HTML Structural Settings](#3-html-structural-settings)
 
-[3. HTML Structural Settings](#3-html-structural-settings)
+[3. HTML Components](#2-html-components)
 
 [4. Javascript and Data files](#4-javascript-and-data-files)
 
@@ -28,10 +28,10 @@ These javascript files do 2 separate things:
 1. They control some aspects of the look and feel of these components, 
 2. and more importantly they include the **data**.
 
-## 2. HTML Components
+## 2. HTML Structural Settings
 
 
-## 3. HTML Structural Settings
+## 3. HTML Components
 
 
 Each one of the main HTML files must have a header section at the top. 
