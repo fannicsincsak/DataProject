@@ -29,12 +29,14 @@ These javascript files do 2 separate things:
 2. and more importantly they include the **data**.
 
 ## 2. HTML Structural Settings
+You will only need tto edit a dedicated section in each HTML files. The blank files that you will need to edit structurally look the same. Each one of these include: 
+* A Header area at the top, and
+* A section where you can copy-paste your components.
+
+#### Header Area
 
 
-## 3. HTML Components
 
-
-Each one of the main HTML files must have a header section at the top. 
 ```HTML
 <!-------------------------------------------CONTENT TO EDIT------------------------------------------->
                     <!--Header-->
@@ -61,6 +63,14 @@ Each one of the main HTML files must have a header section at the top.
                     <!--Don't paste components below-->
 <!-------------------------------------------CONTENT ENDS------------------------------------------->
 ```
+
+## 3. HTML Components
+
+
+Each one of the main HTML files must have a header section at the top. 
+
+
+
 
 
 ## 4. Javascript and Data Files
