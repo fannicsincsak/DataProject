@@ -187,7 +187,7 @@ Therefore the code that you use would look like this:
 ### Table Component
 The Simple Table Component is connected to the **scripts/tables.js** file.
 This javascript file defines: 
-#### A. The source of the date: 
+#### A. The source of the data: 
 ```javascript
 "ajax": "data/myData",
 ```
@@ -204,6 +204,76 @@ This source file can be found under the data folder. You have to use JSON format
 ]
 ```
 You can exchange these to anything and add or remove columns.
+
+#### C. Use Case: _I want to have 2 tables in my main HTML file:_
+Please follow these steps:
+1. Duplicate the simpleTable.html file and let's say that the duplicate is called simpleTable2.html.
+2. Open the simpleTable2.html file and edit ID of the table (this is the original document): 
+```HTML
+<!--Table-->
+<table id="simpleTable" class="display table-title-row" style="width:100%">
+    <thead style="width:100%">
+    <tr style="width:100%">
+        <th>Name</th>
+        <th>Position</th>
+        <th>Office</th>
+        <th>Extn.</th>
+        <th>Start date</th>
+        <th>Salary</th>
+    </tr>
+    </thead>
+</table>
+```
+In the the simpleTable2.html html you would need to change the id="simpleTable" to something else eg. id="simpleTable2":
+```HTML
+<table id="simpleTable2" class="display table-title-row" style="width:100%">
+```
+4. Main HTML File: copy-paste the component code into your main HTML: 
+```HTML
+<div class="section-title">This is a Simple Table</div>
+<div data-include="simpleTable"></div>
+```
+3. Rename your component to simpleTable2 in your main HTML:
+```HTML
+<div data-include="simpleTable2"></div>
+```
+4. Open your tables.js file (this is in the scripts folder). 
+5. Duplicate the code:
+```javascript
+$(document).ready(function() {
+    $('#simpleTable').DataTable( {
+        "scrollY": 300,
+        "scrollX": true,
+        "paging": false,
+        "searching": false,
+        "info": false,
+        "ajax": "data/myData",
+        "autoWidth": true,
+        "columns": [
+            { "data": "name" },
+            { "data": "position" },
+            { "data": "office" },
+            { "data": "extn" },
+            { "data": "start_date" },
+            { "data": "salary" }
+        ]
+    } );
+} );
+```
+6. Edit the ID from #simpleTable to #simpleTable2:
+```javascript
+$('#simpleTable2').DataTable( {
+```
+7. Edit the file name of your data file
+```javascript
+"ajax": "data/myData",
+```
+* please place the data file to the data folder,
+* replace the file name (now it's "myData") to your own file name,
+* if it's a txt file, then you don't need to add .txt extension.
+
+8. You're done!
+
 ### Chart Components
 All of the Chart Components are connected to the **scripts/charts.js** file.
 This javascript file defines both variables and commands.
@@ -269,17 +339,17 @@ In case of this, you would only want to rename "Category A" and "Category B" to 
 Let's say that you would want to add a new Bar Chart. You would need to do a couple of steps: 
 1. Duplicate your simpleBarChart HTML file under the views folder. Let's say that the duplicate will be called **simpleBarChart2.html**.
 2. Open the simpleBarChart2.html file and edit ID of the chart (this is the original document): 
-```javascript
-    <!--Chart-->
-    <div class="ct-chart ct-golden-section ct-chart-1" id="chart1"></div>
+```HTML
+<!--Chart-->
+<div class="ct-chart ct-golden-section ct-chart-1" id="chart1"></div>
 ```
 In the the simpleBarChart2 html you would need to change the id="chart1" to id="chart3":
-```javascript
-    <!--Chart-->
-    <div class="ct-chart ct-golden-section ct-chart-1" id="chart3"></div>
+```HTML
+<!--Chart-->
+<div class="ct-chart ct-golden-section ct-chart-1" id="chart3"></div>
 ```
 4. Main HTML File: copy-paste the component code into your main HTML: 
-```javascript
+```HTML
 <div class="section-title">This is a Simple Bar Chart</div>
 <div data-include="simpleBarChart"></div>
 ```
