@@ -205,4 +205,111 @@ This source file can be found under the data folder. You have to use JSON format
 ```
 You can exchange these to anything and add or remove columns.
 ### Chart Components
+All of the Chart Components are connected to the **scripts/charts.js** file.
+This javascript file defines both variables and commands.
+You don't need to edit the:
+* options and 
+* responsiveOptions variables. 
 
+We only have two options left: 
+**A. The data variables**
+```javascript
+// Simple Bar Chart Data
+var data1 = {
+    labels: ['070124a','71104','71224','72254','73124','73194','76184','78024','78154','82015','84035','84074','85045','86124','86234','87244','91124','91234'],
+    series: [
+        { "name": "Category A", "data": [6685,10784,15066,9861,8074,22953,2294,28571,24586,12475,3502,1079,8668,2748,20086,12966,15997,15025]},
+        { "name": "Category B", "data": [51741,38662,56018,67774,48112,115091,6245,122229,71327,96959,19764,10036,47343,13470,33991,26924,63854,47661]}
+    ]
+};
+```
+**B. The create commands**
+```javascript
+// Create Bar Chart
+new Chartist.Bar('#chart1', data1, options, responsiveOptions);
+```
+Otherwise, there are a couple of things that you would need to know. Here I list some of the use cases:
+
+#### _I want to edit the labels at the bottom of my chart:_
+Let's say that you want to edit labels of your Bar Chart. In case of this you would need to take a look at **data1** variable:
+```javascript
+// Simple Bar Chart Data
+var data1 = {
+    labels: ['070124a','71104','71224','72254','73124','73194','76184','78024','78154','82015','84035','84074','85045','86124','86234','87244','91124','91234'],
+    series: [
+        { "name": "Category A", "data": [6685,10784,15066,9861,8074,22953,2294,28571,24586,12475,3502,1079,8668,2748,20086,12966,15997,15025]},
+        { "name": "Category B", "data": [51741,38662,56018,67774,48112,115091,6245,122229,71327,96959,19764,10036,47343,13470,33991,26924,63854,47661]}
+    ]
+};
+```
+and exchange the content of **lables**:
+```javascript
+    labels: ['070124a','71104','71224','72254','73124','73194','76184','78024','78154','82015','84035','84074','85045','86124','86234','87244','91124','91234'],
+```
+
+#### _I want to edit the data of my chart:_
+Let's say that you want to edit labels of your Bar Chart. In case of this you want to take a look at the **data1** variable again and edit the **series** option:
+```javascript
+    series: [
+        { "name": "Category A", "data": [6685,10784,15066,9861,8074,22953,2294,28571,24586,12475,3502,1079,8668,2748,20086,12966,15997,15025]},
+        { "name": "Category B", "data": [51741,38662,56018,67774,48112,115091,6245,122229,71327,96959,19764,10036,47343,13470,33991,26924,63854,47661]}
+    ]
+```
+#### _I want to edit the title of one of my data categories/legends:_
+In case of this, you would only want to rename "Category A" and "Category B" to something different: 
+```javascript
+    series: [
+        { "name": "This is my new Category 1", "data": [6685,10784,15066,9861,8074,22953,2294,28571,24586,12475,3502,1079,8668,2748,20086,12966,15997,15025]},
+        { "name": "This is my new Category 2", "data": [51741,38662,56018,67774,48112,115091,6245,122229,71327,96959,19764,10036,47343,13470,33991,26924,63854,47661]}
+    ]
+```
+
+#### _I want to add a third chart:_
+Let's say that you would want to add a new Bar Chart. You would need to do a couple of steps: 
+1. Duplicate your simpleBarChart HTML file under the views folder. Let's say that the duplicate will be called simpleBarChart2.
+2. Open the simpleBarChart2 html file and edit id of the chart (this is the original document): 
+```javascript
+    <!--Chart-->
+    <div class="ct-chart ct-golden-section ct-chart-1" id="chart1"></div>
+```
+In the the simpleBarChart2 html you would need to change the id="chart1" to id="chart3":
+```javascript
+    <!--Chart-->
+    <div class="ct-chart ct-golden-section ct-chart-1" id="chart3"></div>
+```
+4. Main HTML File: copy-paste the component code into your main HTML: 
+```javascript
+<div class="section-title">This is a Simple Bar Chart</div>
+<div data-include="simpleBarChart"></div>
+```
+3. Rename your component to simpleBarChart2 in your main HTML:
+```javascript
+<div data-include="simpleBarChart2"></div>
+```
+4. Open your charts.js file (this is in the scripts folder). 
+5. Duplicate the data1 variable and re-name it to data3:
+```javascript
+var data3 = {
+    labels: ['070124a','71104','71224','72254','73124','73194','76184','78024','78154','82015','84035','84074','85045','86124','86234','87244','91124','91234'],
+    series: [
+        { "name": "Category A", "data": [6685,10784,15066,9861,8074,22953,2294,28571,24586,12475,3502,1079,8668,2748,20086,12966,15997,15025]},
+        { "name": "Category B", "data": [51741,38662,56018,67774,48112,115091,6245,122229,71327,96959,19764,10036,47343,13470,33991,26924,63854,47661]}
+    ]
+};
+```
+6. Duplicate the command that creates the chart: 
+```javascript
+// Create Bar Chart
+new Chartist.Bar('#chart1', data1, options, responsiveOptions);
+
+```
+7. You would need to edit 2 things here: 
+* The chart ID (#chart1 -> #chart3) and 
+* the source of the data (data1 -> data3), 
+therefore you would end up with this: 
+```javascript
+// Create Bar Chart
+new Chartist.Bar('#chart3', data3, options, responsiveOptions);
+
+```
+And that's it.
