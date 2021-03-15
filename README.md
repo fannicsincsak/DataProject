@@ -181,7 +181,6 @@ Therefore the code that you use would look like this:
 <!--Don't paste components below-->
 ```
 
-
 ## 4. Javascript and Data Files
 
 ### Table Component
@@ -315,24 +314,24 @@ var data1 = {
 ```
 and exchange the content of **lables**:
 ```javascript
-    labels: ['070124a','71104','71224','72254','73124','73194','76184','78024','78154','82015','84035','84074','85045','86124','86234','87244','91124','91234'],
+labels: ['070124a','71104','71224','72254','73124','73194','76184','78024','78154','82015','84035','84074','85045','86124','86234','87244','91124','91234'],
 ```
 
 #### _I want to edit the data of my chart:_
 Let's say that you want to edit labels of your Bar Chart. In case of this you want to take a look at the **data1** variable again and edit the **series** option:
 ```javascript
-    series: [
-        { "name": "Category A", "data": [6685,10784,15066,9861,8074,22953,2294,28571,24586,12475,3502,1079,8668,2748,20086,12966,15997,15025]},
-        { "name": "Category B", "data": [51741,38662,56018,67774,48112,115091,6245,122229,71327,96959,19764,10036,47343,13470,33991,26924,63854,47661]}
-    ]
+series: [
+    { "name": "Category A", "data": [6685,10784,15066,9861,8074,22953,2294,28571,24586,12475,3502,1079,8668,2748,20086,12966,15997,15025]},
+    { "name": "Category B", "data": [51741,38662,56018,67774,48112,115091,6245,122229,71327,96959,19764,10036,47343,13470,33991,26924,63854,47661]}
+]
 ```
 #### _I want to edit the title of one of my data categories/legends:_
 In case of this, you would only want to rename "Category A" and "Category B" to something different: 
 ```javascript
-    series: [
-        { "name": "This is my new Category 1", "data": [6685,10784,15066,9861,8074,22953,2294,28571,24586,12475,3502,1079,8668,2748,20086,12966,15997,15025]},
-        { "name": "This is my new Category 2", "data": [51741,38662,56018,67774,48112,115091,6245,122229,71327,96959,19764,10036,47343,13470,33991,26924,63854,47661]}
-    ]
+series: [
+    { "name": "This is my new Category 1", "data": [6685,10784,15066,9861,8074,22953,2294,28571,24586,12475,3502,1079,8668,2748,20086,12966,15997,15025]},
+    { "name": "This is my new Category 2", "data": [51741,38662,56018,67774,48112,115091,6245,122229,71327,96959,19764,10036,47343,13470,33991,26924,63854,47661]}
+]
 ```
 
 #### _I want to add a third chart:_
