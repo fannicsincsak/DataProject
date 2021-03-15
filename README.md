@@ -191,6 +191,7 @@ This javascript file defines:
 ```javascript
 "ajax": "data/myData",
 ```
+This source file can be found under the data folder. You have to use JSON formatted text in there.
 #### B. The titles of the columns:
 ```javascript
 "columns": [
@@ -202,5 +203,6 @@ This javascript file defines:
     { "data": "salary" }
 ]
 ```
+You can exchange these to anything and add or remove columns.
 ### Chart Components
 
