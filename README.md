@@ -3,9 +3,9 @@
 ### Contents
 [1. Structural Overview](#1-structural-overview)
 
-[2. HTML Structural Settings](#3-html-structural-settings)
+[2. HTML Structural Settings](#2-html-structural-settings)
 
-[3. HTML Components](#2-html-components)
+[3. HTML Components](#3-html-components)
 
 [4. Javascript and Data files](#4-javascript-and-data-files)
 
