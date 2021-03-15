@@ -354,7 +354,7 @@ In the the simpleBarChart2 html you would need to change the id="chart1" to id="
 <div data-include="simpleBarChart"></div>
 ```
 3. Rename your component to simpleBarChart2 in your main HTML:
-```javascript
+```HTML
 <div data-include="simpleBarChart2"></div>
 ```
 4. Open your charts.js file (this is in the scripts folder). 
