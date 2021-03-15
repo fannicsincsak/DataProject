@@ -30,18 +30,15 @@ These javascript files do 2 separate things:
 
 ## 2. HTML Structural Settings
 You will only need tto edit a dedicated section in each HTML files. The blank files that you will need to edit structurally look the same. Each one of these include: 
-* A Header area at the top, and
-* A section where you can copy-paste your components.
-
-#### Header Area
-
-
+A. A Header area at the top, and
+B. A section where you can copy-paste your components.
 
 ```HTML
 <!-------------------------------------------CONTENT TO EDIT------------------------------------------->
                     <!--Header-->
                     <div class="header">
                         <div class="header-title">Fetch Historical Predictions</div>
+                        <!--Delete from here if you don't need the select-->
                         <div class="row">
                             <div class="col-md-5">
                                 <label class="select-label" for="id_label_single">
@@ -53,7 +50,7 @@ You will only need tto edit a dedicated section in each HTML files. The blank fi
                                     </select>
                                 </label>
                             </div>
-                        </div>
+                        </div> <!--Delete until this if you don't need the select-->
                     </div><!--Header Ends-->
 
                     <!--Paste your components below-->
@@ -63,6 +60,43 @@ You will only need tto edit a dedicated section in each HTML files. The blank fi
                     <!--Don't paste components below-->
 <!-------------------------------------------CONTENT ENDS------------------------------------------->
 ```
+
+#### A. Header Area
+The header area can be edited and used flexibly. Some of the use cases might be: 
+1. Showing a title only,
+2. Showing a title and a select element (by selecting an option we can filter the data on the entire page - eg. by selecting a previous date when the data was analyzed)
+3. Showing a title and 2 select elements (by selectinng the first option eg. we can define a start date and with the second one we can define an end date, therefore the page will show the relevant data that was analyzed between these 2 dates) 
+
+**Editing the Title**
+You have to edit this row inside the Header Area. You can simply exchange the "Fetch Historical Predictions" title with anything that you need.
+```HTML
+<div class="header-title">Fetch Historical Predictions</div>
+```
+
+**Editing the Select**
+This is one select:
+```HTML
+                        <!--Delete from here if you don't need the select-->
+                        <div class="row">
+                            <div class="col-md-5">
+                                <label class="select-label" for="id_label_single">
+                                    Select date
+                                    <select class="js-example-basic-single select2-dates form-control" id="id_label_single" style="width: 50%">
+                                        <option value="one" disabled="disabled">Select</option>
+                                        <option value="two">February 16, 2021 16:00</option>
+                                        <option value="three">February 15, 2021 16:00</option>
+                                    </select>
+                                </label>
+                            </div>
+                        </div> <!--Delete until this if you don't need the select-->
+```
+
+
+
+~~**Editing Range Selectiong**~~
+Work in Progress
+
+#### B. A section where you can copy-paste your components
 
 ## 3. HTML Components
 
