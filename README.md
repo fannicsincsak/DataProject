@@ -62,10 +62,12 @@ B. A section where you can copy-paste your components.
 ```
 
 #### A. Header Area
+Header Areas are used at the top of the pages and we also use these to separate sections on the same HTML page.
 The header area can be edited and used flexibly. Some of the use cases might be: 
 1. Showing a title only,
-2. Showing a title and a select element (by selecting an option we can filter the data on the entire page - eg. by selecting a previous date when the data was analyzed)
-3. Showing a title and 2 select elements (by selectinng the first option eg. we can define a start date and with the second one we can define an end date, therefore the page will show the relevant data that was analyzed between these 2 dates) 
+2. Showing a title and a select element (by selecting an option we can filter the data on the entire page - eg. by selecting a previous date when the data was analyzed),
+3. Showing a title and 2 select elements (by selectinng the first option eg. we can define a start date and with the second one we can define an end date, therefore the page will show the relevant data that was analyzed between these 2 dates),
+4. Using the Header Area multiple times on the same page (you would only need to copy-paste the code above).
 
 **Editing the Title**
 
@@ -106,7 +108,7 @@ Most likely you won't need to edit the options since the backend automatically s
 Work in Progress
 
 #### B. A section where you can copy-paste your components
-You have to paste the components that you select right below the Header area between these commented lines:
+You have to paste the components that you select right below the Header area between these commented rows:
 ```HTML
 <!--Paste your components below-->
 
@@ -116,12 +118,59 @@ You have to paste the components that you select right below the Header area bet
 ```
 
 ## 3. HTML Components
+Right now you can only use 3 types of components:
+A. Simple Table Component,
+B. Simple Bar Chart Component,
+C. Simple Line Chart Component.
+
+**A. Simple Table Component** 
+If you want to use the Simple Table Component, please copy-paste the following code into your main HTML file:
+```HTML
+<!--Paste your components below-->
+
+<div class="section-title">This is a Simple Table</div>
+<div data-include="simpleTable"></div>
+
+<!--Don't paste components below-->
+```
+
+**B. Simple Bar Chart Component** 
+If you want to use the Simple Bar Chartt Component, please copy-paste the following code into your main HTML file:
+```HTML
+<div class="section-title">This is a Simple Bar Chart</div>
+<div data-include="simpleBarChart"></div>
+```
+
+**C. Simple Line Chart Component** 
+If you want to use the Simple Bar Chartt Component, please copy-paste the following code into your main HTML file:
+```HTML
+<div class="section-title">This is a Simple Line Chart</div>
+<div data-include="simpleLineChart"></div>
+```
+
+**Use Cases:**
+* *I want to use multiple components in the HTML file:*
+If you need multiple components on the same HTML page, then you would need to copy-paste the HTML components and put them under each other: 
+```HTML
+<!--Paste your components below-->
+
+<div class="section-title">This is a Simple Table</div>
+<div data-include="simpleTable"></div>
+
+<div class="section-title">This is a Simple Bar Chart</div>
+<div data-include="simpleBarChart"></div>
+
+<div class="section-title">This is a Simple Line Chart</div>
+<div data-include="simpleLineChart"></div>
+
+<!--Don't paste components below-->
+```
+
+* *I don't need a title at the top of my component:*
 
 
-Each one of the main HTML files must have a header section at the top. 
 
-
-
+**C. Simple Line Chart Component** 
 
 
 ## 4. Javascript and Data Files
