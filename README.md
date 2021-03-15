@@ -184,8 +184,23 @@ Therefore the code that you use would look like this:
 
 ## 4. Javascript and Data Files
 
-
-
-
-
+### Table Component
+The Simple Table Component is connected to the **scripts/tables.js** file.
+This javascript file defines: 
+#### A. The source of the date: 
+```javascript
+"ajax": "data/myData",
+```
+#### B. The titles of the columns:
+```javascript
+"columns": [
+    { "data": "name" },
+    { "data": "position" },
+    { "data": "office" },
+    { "data": "extn" },
+    { "data": "start_date" },
+    { "data": "salary" }
+]
+```
+### Chart Components
 
