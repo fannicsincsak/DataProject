@@ -16,13 +16,13 @@ We have 4 file types:
 * Javascript files,
 * text files (JSON format, that include the data).
 
-#### Main HTML Files
+### Main HTML Files
 Each projects will have a couple of main HTML files. For now we will only use the index.html file.
 
-#### Components
+### Components
 You can see in the file structure that under the views folder we have a some other HTML files, from now on we will call these **components**. These components can be simply included in the main HTML files.
 
-#### Javascript files and text files
+### Javascript files and text files
 Chart and Table type components (HTML files) are always connected to javascript files. 
 These javascript files do 2 separate things:
 1. They control some aspects of the look and feel of these components, 
@@ -61,7 +61,7 @@ B. A section where you can copy-paste your components.
 <!-------------------------------------------CONTENT ENDS------------------------------------------->
 ```
 
-#### A. Header Area
+### A. Header Area
 Header Areas are used at the top of the pages and we also use these to separate sections on the same HTML page.
 The header area can be edited and used flexibly. Some of the use cases might be: 
 1. Showing a title only,
@@ -107,7 +107,7 @@ Most likely you won't need to edit the options since the backend automatically s
 
 Work in Progress
 
-#### B. A section where you can copy-paste your components
+### B. A section where you can copy-paste your components
 You have to paste the components that you select right below the Header area between these commented rows:
 ```HTML
 <!--Paste your components below-->
@@ -123,7 +123,7 @@ A. Simple Table Component,
 B. Simple Bar Chart Component,
 C. Simple Line Chart Component.
 
-**A. Simple Table Component** 
+### A. Simple Table Component
 If you want to use the Simple Table Component, please copy-paste the following code into your main HTML file:
 ```HTML
 <!--Paste your components below-->
@@ -134,22 +134,22 @@ If you want to use the Simple Table Component, please copy-paste the following c
 <!--Don't paste components below-->
 ```
 
-**B. Simple Bar Chart Component** 
+### B. Simple Bar Chart Component
 If you want to use the Simple Bar Chartt Component, please copy-paste the following code into your main HTML file:
 ```HTML
 <div class="section-title">This is a Simple Bar Chart</div>
 <div data-include="simpleBarChart"></div>
 ```
 
-**C. Simple Line Chart Component** 
+### C. Simple Line Chart Component
 If you want to use the Simple Bar Chartt Component, please copy-paste the following code into your main HTML file:
 ```HTML
 <div class="section-title">This is a Simple Line Chart</div>
 <div data-include="simpleLineChart"></div>
 ```
 
-**Use Cases:**
-* *I want to use multiple components in the HTML file:*
+### Use Cases:
+**_I want to use multiple components in the HTML file:_**
 If you need multiple components on the same HTML page, then you would need to copy-paste the HTML components and put them under each other: 
 ```HTML
 <!--Paste your components below-->
@@ -166,7 +166,7 @@ If you need multiple components on the same HTML page, then you would need to co
 <!--Don't paste components below-->
 ```
 
-* *I don't need a title at the top of my component:*
+**_I don't need a title at the top of my component:_**
 If you don't need the title at the top of you component, then please delete the title div: 
 
 ```HTML
