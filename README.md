@@ -35,29 +35,29 @@ B. A section where you can copy-paste your components.
 
 ```HTML
 <!-------------------------------------------CONTENT TO EDIT------------------------------------------->
-                    <!--Header-->
-                    <div class="header">
-                        <div class="header-title">Fetch Historical Predictions</div>
-                        <!--Delete from here if you don't need the select-->
-                        <div class="row">
-                            <div class="col-md-5">
-                                <label class="select-label" for="id_label_single">
-                                    Select date
-                                    <select class="js-example-basic-single select2-dates form-control" id="id_label_single" style="width: 50%">
-                                        <option value="one" disabled="disabled">Select</option>
-                                        <option value="two">February 16, 2021 16:00</option>
-                                        <option value="three">February 15, 2021 16:00</option>
-                                    </select>
-                                </label>
-                            </div>
-                        </div> <!--Delete until this if you don't need the select-->
-                    </div><!--Header Ends-->
+<!--Header-->
+<div class="header">
+    <div class="header-title">Fetch Historical Predictions</div>
+    <!--Delete from here if you don't need the select-->
+    <div class="row">
+        <div class="col-md-5">
+            <label class="select-label" for="id_label_single">
+                Select date
+                <select class="js-example-basic-single select2-dates form-control" id="id_label_single" style="width: 50%">
+                    <option value="one" disabled="disabled">Select</option>
+                    <option value="two">February 16, 2021 16:00</option>
+                    <option value="three">February 15, 2021 16:00</option>
+                </select>
+            </label>
+        </div>
+    </div> <!--Delete until this if you don't need the select-->
+</div><!--Header Ends-->
 
-                    <!--Paste your components below-->
+<!--Paste your components below-->
 
 
 
-                    <!--Don't paste components below-->
+<!--Don't paste components below-->
 <!-------------------------------------------CONTENT ENDS------------------------------------------->
 ```
 
@@ -78,19 +78,19 @@ You have to edit this row inside the Header Area. You can simply exchange the "F
 
 This is one select:
 ```HTML
-                        <!--Delete from here if you don't need the select-->
-                        <div class="row">
-                            <div class="col-md-5">
-                                <label class="select-label" for="id_label_single">
-                                    Select date
-                                    <select class="js-example-basic-single select2-dates form-control" id="id_label_single" style="width: 50%">
-                                        <option value="one" disabled="disabled">Select</option>
-                                        <option value="two">February 16, 2021 16:00</option>
-                                        <option value="three">February 15, 2021 16:00</option>
-                                    </select>
-                                </label>
-                            </div>
-                        </div> <!--Delete until this if you don't need the select-->
+<!--Delete from here if you don't need the select-->
+<div class="row">
+    <div class="col-md-5">
+        <label class="select-label" for="id_label_single">
+            Select date
+            <select class="js-example-basic-single select2-dates form-control" id="id_label_single" style="width: 50%">
+                <option value="one" disabled="disabled">Select</option>
+                <option value="two">February 16, 2021 16:00</option>
+                <option value="three">February 15, 2021 16:00</option>
+            </select>
+        </label>
+    </div>
+</div> <!--Delete until this if you don't need the select-->
 ```
 
 You have to change the "Select date" text to edit the label at the top of the select:
@@ -106,6 +106,14 @@ Most likely you won't need to edit the options since the backend automatically s
 Work in Progress
 
 #### B. A section where you can copy-paste your components
+You have to paste the components that you select right below the Header area between these commented lines:
+```HTML
+<!--Paste your components below-->
+
+
+
+<!--Don't paste components below-->
+```
 
 ## 3. HTML Components
 
