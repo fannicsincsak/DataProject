@@ -68,12 +68,14 @@ The header area can be edited and used flexibly. Some of the use cases might be:
 3. Showing a title and 2 select elements (by selectinng the first option eg. we can define a start date and with the second one we can define an end date, therefore the page will show the relevant data that was analyzed between these 2 dates) 
 
 **Editing the Title**
+
 You have to edit this row inside the Header Area. You can simply exchange the "Fetch Historical Predictions" title with anything that you need.
 ```HTML
 <div class="header-title">Fetch Historical Predictions</div>
 ```
 
 **Editing the Select**
+
 This is one select:
 ```HTML
                         <!--Delete from here if you don't need the select-->
