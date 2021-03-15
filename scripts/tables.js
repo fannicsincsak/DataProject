@@ -1,4 +1,4 @@
-//Scroll Table
+//SimpleTable
 $(document).ready(function() {
     $('#simpleTable').DataTable( {
         "scrollY": 300,

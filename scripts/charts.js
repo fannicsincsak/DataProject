@@ -26,7 +26,7 @@ var responsiveOptions = [
 ];
 
 
-// Chart #1 Data
+// Simple Bar Chart Data
 var data1 = {
     labels: ['070124a','71104','71224','72254','73124','73194','76184','78024','78154','82015','84035','84074','85045','86124','86234','87244','91124','91234'],
     series: [
@@ -35,7 +35,7 @@ var data1 = {
     ]
 };
 
-// Chart #2 Data
+// Simple Line Chart Data
 var data2 = {
     labels: ['070124a','71104','71224','72254','73124','73194','76184','78024','78154','82015','84035','84074','85045','86124','86234','87244','91124','91234'],
     series: [
@@ -44,10 +44,10 @@ var data2 = {
     ]
 };
 
-// Create Chart #1
+// Create Bar Chart
 new Chartist.Bar('#chart1', data1, options, responsiveOptions);
 
-// Create Chart #2
+// Create Line Chart
 new Chartist.Line('#chart2', data2, options, responsiveOptions);
 
 
