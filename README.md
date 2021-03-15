@@ -93,9 +93,16 @@ This is one select:
                         </div> <!--Delete until this if you don't need the select-->
 ```
 
+You have to change the "Select date" text to edit the label at the top of the select:
+```HTML
+<label class="select-label" for="id_label_single">
+  Select date
+```
 
+Most likely you won't need to edit the options since the backend automatically should take care of that.
 
 ~~**Editing Range Selectiong**~~
+
 Work in Progress
 
 #### B. A section where you can copy-paste your components
