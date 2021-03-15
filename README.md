@@ -267,8 +267,8 @@ In case of this, you would only want to rename "Category A" and "Category B" to 
 
 #### _I want to add a third chart:_
 Let's say that you would want to add a new Bar Chart. You would need to do a couple of steps: 
-1. Duplicate your simpleBarChart HTML file under the views folder. Let's say that the duplicate will be called simpleBarChart2.
-2. Open the simpleBarChart2 html file and edit id of the chart (this is the original document): 
+1. Duplicate your simpleBarChart HTML file under the views folder. Let's say that the duplicate will be called **simpleBarChart2.html**.
+2. Open the simpleBarChart2.html file and edit ID of the chart (this is the original document): 
 ```javascript
     <!--Chart-->
     <div class="ct-chart ct-golden-section ct-chart-1" id="chart1"></div>
