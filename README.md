@@ -10,12 +10,12 @@
 [4. Javascript and Data files](#4-javascript-and-data-files)
 
 ## 1. Structural Overview
-
+Each projects will have a couple of main HTML files. For now we will only use the index.html file.
+You can see in the file structure that under the views folder we have a couple HTML files, from now on we will call these components. These components can be simply included in the main HTML files.
 
 
 ```HTML
 <!-------------------------------------------CONTENT TO EDIT------------------------------------------->
-
                     <!--Header-->
                     <div class="header">
                         <div class="header-title">Fetch Historical Predictions</div>
@@ -31,11 +31,15 @@
                                 </label>
                             </div>
                         </div>
-                    </div>
-                    
-                    Here you want to paste your first component!
-                    
+                    </div><!--Header Ends-->
+
+                    <!--Paste your components below-->
+
+
+
+                    <!--Don't paste components below-->
 <!-------------------------------------------CONTENT ENDS------------------------------------------->
+
 ```
 
 
