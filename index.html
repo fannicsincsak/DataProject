@@ -46,10 +46,14 @@
                             <div class="col-md-5">
                                 <label class="select-label" for="id_label_single">
                                     Select date
-                                    <select class="js-example-basic-single select2-dates form-control" id="id_label_single" style="width: 50%">
+                                    <select class="js-example-basic-single select2-dates form-control" id="id_label_single">
                                         <option value="one" disabled="disabled">Select</option>
                                         <option value="two">February 16, 2021 16:00</option>
                                         <option value="three">February 15, 2021 16:00</option>
+                                        <option value="four">February 14, 2021 16:00</option>
+                                        <option value="five">February 13, 2021 16:00</option>
+                                        <option value="six">February 12, 2021 16:00</option>
+                                        <option value="seven">February 11, 2021 16:00</option>
                                     </select>
                                 </label>
                             </div>
@@ -69,6 +73,40 @@
                     <!--Simple Line Chart-->
                     <div class="section-title">This is a Simple Line Chart</div>
                     <div data-include="simpleLineChart"></div>
+
+                    <!--Header-->
+                    <div class="header">
+                        <div class="header-title">Header Area with 2 Selects</div>
+                        <!--Delete from here if you don't need the select-->
+                        <div class="row">
+                            <div class="col-md-5">
+                                <label class="select-label" for="id_label_single_2">
+                                    Start date
+                                    <select class="js-example-basic-single select2-dates form-control" id="id_label_single_2">
+                                        <option value="one" disabled="disabled">Select</option>
+                                        <option value="two">February 16, 2021 16:00</option>
+                                        <option value="three">February 15, 2021 16:00</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="col-md-5">
+                                <label class="select-label" for="id_label_single_3">
+                                    End date
+                                    <select class="js-example-basic-single select2-dates form-control" id="id_label_single_3">
+                                        <option value="one" disabled="disabled">Select</option>
+                                        <option value="two">February 16, 2021 16:00</option>
+                                        <option value="three">February 15, 2021 16:00</option>
+                                    </select>
+                                </label>
+                            </div>
+                        </div> <!--Delete until this if you don't need the select-->
+                    </div><!--Header Ends-->
+
+                    <!--Area Line Chart-->
+                    <div class="section-title">This is an Area Line Chart</div>
+                    <div data-include="areaLineChart"></div>
+
+
 
                     <!--Don't paste components below-->
                     <!-------------------------------------------CONTENT ENDS------------------------------------------->

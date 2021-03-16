@@ -1,0 +1,41 @@
+<div class="chart-component" id="chart-container3">
+    <!--Title of Chart-->
+    <div class="title-row">
+        <div class="component-title">Title</div>
+        <button class="button-small">Download</button>
+    </div>
+    <!--Chart-->
+    <div class="ct-chart ct-golden-section ct-chart3" id="chart3"></div>
+</div>
+
+<!------------------------------------DEPENDENCIES FOR THIS FILE ONLY------------------------------------>
+<!--Font: Roboto-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<!--Custom CSS-->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+<!--Bootstrap-->
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/bootstrap-grid.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/bootstrap-reboot.min.css" rel="stylesheet" type="text/css" media="all">
+<!--Chart CSS 2-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.11.4/chartist.min.css" integrity="sha512-V0+DPzYyLzIiMiWCg3nNdY+NyIiK9bED/T1xNBj08CaIUyK3sXRpB26OUCIzujMevxY9TRJFHQIxTwgzb0jVLg==" crossorigin="anonymous" />
+
+<!--jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!--Bootstrap-->
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<!--Chart JS 2.0-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.11.4/chartist.min.js" integrity="sha512-9rxMbTkN9JcgG5euudGbdIbhFZ7KGyAuVomdQDI9qXfPply9BJh0iqA7E/moLCatH2JD4xBGHwV6ezBkCpnjRQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chartist-plugin-legend/0.6.2/chartist-plugin-legend.js" integrity="sha512-CBRJixgx8naN06wpNL+R/devoQkEHZy+DET78kCXZx4zzTKotHfdP2r469yQ4Kme2qnxF51Jl+X5khe+OC6S/A==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chartist-plugin-legend/0.6.2/chartist-plugin-legend.min.js.map" ></script>
+<!--Custom Chart JS-->
+<script type="text/javascript" src="scripts/charts.js"></script>
+<!--Resize Sensor-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/css-element-queries/1.2.3/ResizeSensor.js" integrity="sha512-TH1YiqLIcRRGn+EOLBXfHtoZfGaPGROB6sEcSC0TK+72bc7Xhn9P/JqaSX+3jw3mxOSdXRuAIZjedCJQtmYfWA==" crossorigin="anonymous"></script>
+
+<script>
+    new ResizeSensor($('#chart-container3'), function(){
+        document.querySelector(".ct-chart3").__chartist__.update()
+    });
+</script>

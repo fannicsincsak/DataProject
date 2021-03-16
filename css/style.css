@@ -415,12 +415,13 @@ table.dataTable.display tbody tr:hover{
 
 /*CHARTS*/
 #chart1,
-#chart2{
+#chart2,
+#chart3,
+.ct-chart{
     height: 450px;
 }
 
-#chart1 .ct-grids .ct-horizontal,
-#chart2 .ct-grids .ct-horizontal{
+.ct-grids .ct-horizontal{
     display: none;
 }
 
@@ -441,11 +442,22 @@ table.dataTable.display tbody tr:hover{
     stroke: #00A5BB !important;
 }
 
-.ct-series-a .ct-bar,
-.ct-series-a .ct-line,
-.ct-series-a .ct-point,
-.ct-series-a .ct-slice-donut{
+.ct-series-a .ct-bar{
     stroke: #D5F0F3 !important;
+}
+
+.ct-chart-3 .ct-series-a .ct-line,
+.ct-chart-3 .ct-series-a .ct-point,
+.ct-chart-3 .ct-series-a .ct-slice-donut{
+    stroke: #E8A123 !important;
+}
+
+.ct-series-b .ct-area{
+    fill: #00A5BB !important;
+}
+
+.ct-series-a .ct-area{
+    fill: #D5F0F3 !important;
 }
 
 .ct-horizontal ~ .ct-horizontal {
@@ -537,7 +549,7 @@ table.dataTable.display tbody tr:hover{
     right: 0;
 }
 .ct-chart g:not(.ct-grids):not(.ct-labels) g:nth-child(1) .ct-point, .ct-chart g:not(.ct-grids):not(.ct-labels) g:nth-child(1) .ct-line {
-    stroke: #d70206;
+    stroke: #E8A123;
 }
 .ct-chart g:not(.ct-grids):not(.ct-labels) g:nth-child(2) .ct-point, .ct-chart g:not(.ct-grids):not(.ct-labels) g:nth-child(2) .ct-line {
     stroke: #f05b4f;
@@ -577,8 +589,11 @@ table.dataTable.display tbody tr:hover{
     color: #002039 !important;
 }
 
+/*Select2*/
+
 label .select2-container{
     margin-top: 5px;
+    width: 100% !important;
 }
 
 .select2-container--default .select2-selection--single{
@@ -595,6 +610,50 @@ label .select2-container{
     right: 12px;
 }
 
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    background-image: url(../img/select-icon.svg);
+    background-color: transparent;
+    background-size: contain;
+    border: none !important;
+    height: 17px !important;
+    width: 17px !important;
+    margin: auto !important;
+    top: 2px !important;
+    left: auto !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered,
+.select2-results__option{
+    color: #002039;
+}
+
+.select2-results__option{
+    line-height: 20px;
+    font-size: 16px;
+    padding: 12px;
+}
+
+.select2-container--default.select2-container--focus,
+.select2-selection--multiple{
+    outline: none !important;
+    border: #00A5BB solid 2px !important;
+    border-radius: .25rem;
+}
+
+.select2-container *:focus{
+    outline: none !important;
+}
+
+.select2-container--default .select2-results__option[aria-selected=true]{
+    background-color: #00A5BB;
+    color: white;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected]{
+    background-color: rgba(23, 162, 184, 0.1);
+    color: #002039;
+}
+
 
 /*Chart Legend*/
 .ct-legend{
@@ -609,13 +668,23 @@ label .select2-container{
     margin-top: 5px;
 }
 
-.ct-chart .ct-legend li:nth-child(1)::before {
+#chart1 .ct-legend li:nth-child(1)::before,
+#chart2 .ct-legend li:nth-child(1)::before,
+#chart3 .ct-legend li:nth-child(1)::before{
     background-color: #00A5BB;
 }
 
-.ct-chart .ct-legend li:nth-child(2)::before {
+#chart1 .ct-legend li:nth-child(2)::before,
+#chart3 .ct-legend li:nth-child(2)::before{
     background-color: #D5F0F3;
 }
+
+#chart2 .ct-legend li:nth-child(2)::before,
+#chart3 .ct-legend li:nth-child(2)::before{
+    background-color: #E8A123 !important;
+}
+
+
 
 /*Table Header Row 100% Width*/
 .dataTables_scrollHead,
@@ -623,4 +692,9 @@ label .select2-container{
 .table-title-row,
 .dataTables_scrollHeadInner, .table{
     width: 100% !important;
+}
+
+/*Header*/
+body .header:not(:first-child){
+    margin-top: 72px;
 }
