@@ -35,15 +35,14 @@
                 <!-- MAIN -->
                 <div class="col body-content">
 
-
 <!-------------------------------------------CONTENT TO EDIT------------------------------------------->
 
                     <!--Header-->
                     <div class="header">
                         <div class="header-title">Fetch Historical Predictions</div>
                         <!--Delete from here if you don't need the select-->
-                        <div class="row">
-                            <div class="col-md-5">
+                        <div class="row select-row">
+                            <div class="col-md-4">
                                 <label class="select-label" for="id_label_single">
                                     Select date
                                     <select class="js-example-basic-single select2-dates form-control" id="id_label_single">
@@ -62,13 +61,25 @@
 
                     <!--Paste your components below-->
 
-                    <!-- Simple Table-->
+                    <!--4 Boxes-->
+                    <div class="section-title">4 box next to each other</div>
+                    <div data-include="fourBoxes"></div>
+
+                    <!--Simple Table-->
                     <div class="section-title">This is a Simple Table</div>
                     <div data-include="simpleTable"></div>
 
                     <!--Simple Bar Chart-->
                     <div class="section-title">This is a Simple Bar Chart</div>
                     <div data-include="simpleBarChart"></div>
+
+                    <!--Stacked Bar Chart-->
+                    <div class="section-title">This is a Stacked Bar Chart</div>
+                    <div data-include="stackedBarChart"></div>
+
+                    <!--Horizontal Bar Chart-->
+                    <div class="section-title">This is a Horizontal Bar Chart</div>
+                    <div data-include="horizontalBarChart"></div>
 
                     <!--Simple Line Chart-->
                     <div class="section-title">This is a Simple Line Chart</div>
@@ -78,8 +89,8 @@
                     <div class="header">
                         <div class="header-title">Header Area with 2 Selects</div>
                         <!--Delete from here if you don't need the select-->
-                        <div class="row">
-                            <div class="col-md-5">
+                        <div class="row select-row">
+                            <div class="col-md-4">
                                 <label class="select-label" for="id_label_single_2">
                                     Start date
                                     <select class="js-example-basic-single select2-dates form-control" id="id_label_single_2">
@@ -89,7 +100,7 @@
                                     </select>
                                 </label>
                             </div>
-                            <div class="col-md-5">
+                            <div class="col-md-4">
                                 <label class="select-label" for="id_label_single_3">
                                     End date
                                     <select class="js-example-basic-single select2-dates form-control" id="id_label_single_3">

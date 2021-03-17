@@ -1,11 +1,11 @@
-<div class="chart-component" id="chart-container4">
+<div class="chart-component" id="chart-container2">
     <!--Title of Chart-->
     <div class="title-row">
         <div class="component-title">Title</div>
         <button class="button-small">Download</button>
     </div>
     <!--Chart-->
-    <div class="ct-chart ct-golden-section ct-chart4" id="chart4"></div>
+    <div class="ct-chart ct-golden-section ct-chart-2" id="chart2"></div>
 </div>
 
 <!------------------------------------DEPENDENCIES FOR THIS FILE ONLY------------------------------------>
@@ -35,7 +35,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/css-element-queries/1.2.3/ResizeSensor.js" integrity="sha512-TH1YiqLIcRRGn+EOLBXfHtoZfGaPGROB6sEcSC0TK+72bc7Xhn9P/JqaSX+3jw3mxOSdXRuAIZjedCJQtmYfWA==" crossorigin="anonymous"></script>
 
 <script>
-    new ResizeSensor($('#chart-container4'), function(){
-        document.querySelector(".ct-chart4").__chartist__.update()
+    new ResizeSensor($('#chart-container2'), function(){
+        document.querySelector(".ct-chart-2").__chartist__.update()
     });
 </script>
