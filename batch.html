@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Pilot</title>
+
+        <!-------------------------------------------CSS FILES------------------------------------------->
+        <!--Font: Roboto-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <!--Custom CSS-->
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+        <!--Uploader CSS-->
+        <link href="css/jquery.dm-uploader.css" rel="stylesheet" type="text/css" media="all">
+        <!--Bootstrap-->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+        <link href="css/bootstrap-grid.min.css" rel="stylesheet" type="text/css" media="all">
+        <link href="css/bootstrap-reboot.min.css" rel="stylesheet" type="text/css" media="all">
+        <!--jQuery-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ==" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+
+        <div class="container-fluid p-0">
+            <div class="row" id="body-row">
+                <div data-include="leftNav" style="z-index: 2"></div>
+                <!-- MAIN -->
+                <div class="col body-content">
+
+                    <!-------------------------------------------CONTENT TO EDIT------------------------------------------->
+
+                    <!--Header-->
+                    <div class="header">
+                        <div class="header-title">Batch Prediction</div>
+                    </div><!--Header Ends-->
+
+                    <!--Upload-->
+
+                    <div role="main" class="container-fluid">
+
+                        <div class="">Upload</div>
+
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+
+                                <!-- Our markup, the important part here! -->
+                                <div id="drag-and-drop-zone" class="dm-uploader p-5">
+                                    <h3 class="mb-5 mt-5 text-muted">Drag &amp; drop files here</h3>
+
+                                    <div class="btn btn-primary btn-block mb-5">
+                                        <span>Open the file Browser</span>
+                                        <input type="file" title='Click to add Files' />
+                                    </div>
+                                </div><!-- /uploader -->
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                                <div class="card h-100">
+                                    <div class="card-header">
+                                        File List
+                                    </div>
+
+                                    <ul class="list-unstyled p-2 d-flex flex-column col" id="files">
+                                        <li class="text-muted text-center empty">No files uploaded.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div><!-- /file list -->
+
+                        <!--
+                        <div class="alert alert-info" role="alert">
+                        </div>
+                        -->
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card h-100">
+                                    <div class="card-header">
+                                        Debug Messages
+                                    </div>
+
+                                    <ul class="list-group list-group-flush" id="debug">
+                                        <li class="list-group-item text-muted empty">Loading plugin....</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> <!-- /debug -->
+
+                    </div> <!-- /container -->
+                    <!--Upload Ends-->
+
+
+                    <!-------------------------------------------CONTENT ENDS------------------------------------------->
+                </div>
+            </div>
+        </div>
+    </body>
+
+
+    <!-------------------------------------------SCRIPTS------------------------------------------->
+
+    <!--Bootstrap-->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!--Include HTML in HTML-->
+    <script type="text/javascript" src="scripts/include.js"></script>
+    <!--Menu Collapse (Added to leftNav.html)-->
+    <script type="text/javascript" src="scripts/menu.js"></script>
+    <!--Uploader-->
+    <script type="text/javascript" src="js/jquery.dm-uploader.js"></script>
+    <script type="text/javascript" src="scripts/uploader.js"></script>
+    <script type="text/javascript" src="scripts/uploader-config.js"></script>
+</html>

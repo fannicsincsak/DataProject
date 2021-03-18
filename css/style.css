@@ -839,3 +839,23 @@ body .header:not(:first-child){
     color: #002039;
     opacity: 0.4;
 }
+
+/*BATCH - Uploader*/
+#files {
+    overflow-y: scroll !important;
+    min-height: 320px;
+}
+#debug {
+    overflow-y: scroll !important;
+    height: 180px;
+}
+
+.dm-uploader {
+    border: 0.25rem dashed #A5A5C7;
+    text-align: center;
+}
+.dm-uploader.active {
+    border-color: red;
+
+    border-style: solid;
+}
