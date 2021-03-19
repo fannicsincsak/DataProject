@@ -851,11 +851,66 @@ body .header:not(:first-child){
 }
 
 .dm-uploader {
-    border: 0.25rem dashed #A5A5C7;
+    border: 1px dashed rgba(0,32,57,0.2);
+    box-sizing: border-box;
+    border-radius: 20px;
     text-align: center;
 }
 .dm-uploader.active {
     border-color: red;
-
     border-style: solid;
+}
+
+.uploader-row{
+    margin-top: 52px;
+}
+
+.upload-box{
+    background: white;
+    box-shadow: 0 0 4px rgba(10, 2, 3, 0.1);
+    border-radius: 12px;
+    padding: 20px 60px 60px 60px;
+}
+
+.upload-title{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #002039;
+    opacity: 0.5;
+    padding-bottom: 20px;
+}
+
+.drop-text{
+    color: #002039;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.upload-supporting-text{
+    font-size: 13px;
+    line-height: 17px;
+    text-align: center;
+    color: #002039;
+    opacity: 0.5;
+    padding-top: 12px;
+}
+
+.upload-image{
+    background: url(../img/Attach.svg);
+    width: 61px;
+    height: 53px;
+    margin: auto;
+    text-align: center;
+}
+
+.upload-button{
+
 }

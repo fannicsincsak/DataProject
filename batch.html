@@ -36,24 +36,22 @@
                     </div><!--Header Ends-->
 
                     <!--Upload-->
-
                     <div role="main" class="container-fluid">
+                        <div class="row uploader-row">
 
-                        <div class="">Upload</div>
-
-                        <div class="row">
                             <div class="col-md-6 col-sm-12">
-
-                                <!-- Our markup, the important part here! -->
-                                <div id="drag-and-drop-zone" class="dm-uploader p-5">
-                                    <h3 class="mb-5 mt-5 text-muted">Drag &amp; drop files here</h3>
-
-                                    <div class="btn btn-primary btn-block mb-5">
-                                        <span>Open the file Browser</span>
-                                        <input type="file" title='Click to add Files' />
-                                    </div>
-                                </div><!-- /uploader -->
-
+                                <div class="upload-box">
+                                    <div class="upload-title">Upload</div>
+                                    <!-- Our markup, the important part here! -->
+                                    <div id="drag-and-drop-zone" class="dm-uploader p-5">
+                                        <div class="upload-image"></div>
+                                        <div class="drop-text">Drop your file here, or browse</div>
+                                        <div>
+                                            <input class="upload-button" type="file" title='browse' />
+                                        </div>
+                                        <div class="upload-supporting-text">Supports: CSV ·  Limit: 200MB/file</div>
+                                    </div><!-- /uploader -->
+                                </div>
                             </div>
 
                             <div class="col-md-6 col-sm-12">
