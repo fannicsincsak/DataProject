@@ -6,7 +6,7 @@ $(function(){
      * UI functions ui_* can be located in: demo-ui.js
      */
     $('#drag-and-drop-zone').dmUploader({ //
-        url: '../backend/upload.php',
+        url: 'backend/upload.php',
         maxFileSize: 200000000, // 200 Megs
         extFilter: ["csv"],
         onDragEnter: function(){
