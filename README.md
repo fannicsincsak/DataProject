@@ -118,10 +118,13 @@ You have to paste the components that you select right below the Header area bet
 ```
 
 ## 3. HTML Components
-Right now you can only use 3 types of components:
-A. Simple Table Component,
-B. Simple Bar Chart Component,
-C. Simple Line Chart Component.
+Right now you can only use 6 types of components:
+A. Simple Table,
+B. Simple Bar Chart (ID in scripts/chart.js: #chart1),
+C. Stacked Bar Chart (ID in scripts/chart.js: #chart2),
+D. Horizontal Bar Chart (ID in scripts/chart.js: #chart3),
+E. Simple Line Chart (ID in scripts/chart.js: #chart4),
+F. Area Line Chart (ID in scripts/chart.js: #chart5).
 
 ### A. Simple Table Component
 If you want to use the Simple Table Component, please copy-paste the following code into your main HTML file:
@@ -135,17 +138,38 @@ If you want to use the Simple Table Component, please copy-paste the following c
 ```
 
 ### B. Simple Bar Chart Component
-If you want to use the Simple Bar Chartt Component, please copy-paste the following code into your main HTML file:
+If you want to use the Simple Bar Chart Component, please copy-paste the following code into your main HTML file:
 ```HTML
 <div class="section-title">This is a Simple Bar Chart</div>
 <div data-include="simpleBarChart"></div>
 ```
 
-### C. Simple Line Chart Component
+### C. Stacked Bar Chart Component
+If you want to use the Stacked Bar Chart Component, please copy-paste the following code into your main HTML file:
+```HTML
+<div class="section-title">This is a Stacked Bar Chart</div>
+<div data-include="stackedBarChart"></div>
+```
+
+### D. Horizontal Bar Chart Component
+If you want to use the Horizontal Bar Chart Component, please copy-paste the following code into your main HTML file:
+```HTML
+<div class="section-title">This is a Horizontal Bar Chart</div>
+<div data-include="horizontalBarChart"></div>
+```
+
+### E. Simple Line Chart Component
 If you want to use the Simple Bar Chartt Component, please copy-paste the following code into your main HTML file:
 ```HTML
 <div class="section-title">This is a Simple Line Chart</div>
 <div data-include="simpleLineChart"></div>
+```
+
+### F. Area Line Chart Component
+If you want to use the Area Line Chart Component, please copy-paste the following code into your main HTML file:
+```HTML
+<div class="section-title">This is an Area Line Chart</div>
+<div data-include="areaLineChart"></div>
 ```
 
 ### Use Cases:
@@ -285,7 +309,7 @@ We only have two options left:
 **A. The data variables**
 ```javascript
 // Simple Bar Chart Data
-var data1 = {
+var dataBarChart = {
     labels: ['070124a','71104','71224','72254','73124','73194','76184','78024','78154','82015','84035','84074','85045','86124','86234','87244','91124','91234'],
     series: [
         { "name": "Category A", "data": [6685,10784,15066,9861,8074,22953,2294,28571,24586,12475,3502,1079,8668,2748,20086,12966,15997,15025]},
@@ -296,15 +320,15 @@ var data1 = {
 **B. The create commands**
 ```javascript
 // Create Bar Chart
-new Chartist.Bar('#chart1', data1, options, responsiveOptions);
+new Chartist.Bar('#chart1', dataBarChart, options, responsiveOptions);
 ```
 Otherwise, there are a couple of things that you would need to know. Here I list some of the use cases:
 
 #### _I want to edit the labels at the bottom of my chart:_
-Let's say that you want to edit labels of your Bar Chart. In case of this you would need to take a look at **data1** variable:
+Let's say that you want to edit labels of your Bar Chart. In case of this you would need to take a look at **dataBarChart** variable:
 ```javascript
 // Simple Bar Chart Data
-var data1 = {
+var dataBarChart = {
     labels: ['070124a','71104','71224','72254','73124','73194','76184','78024','78154','82015','84035','84074','85045','86124','86234','87244','91124','91234'],
     series: [
         { "name": "Category A", "data": [6685,10784,15066,9861,8074,22953,2294,28571,24586,12475,3502,1079,8668,2748,20086,12966,15997,15025]},
@@ -342,10 +366,10 @@ Let's say that you would want to add a new Bar Chart. You would need to do a cou
 <!--Chart-->
 <div class="ct-chart ct-golden-section ct-chart-1" id="chart1"></div>
 ```
-In the the simpleBarChart2 html you would need to change the id="chart1" to id="chart3":
+In the the simpleBarChart2 html you would need to change the id="chart1" to id="chart6" (since in in the scripts/charts.js file the highest number of ID is currently id="chart5", but you can basically name your chart's ID to anything else as well):
 ```HTML
 <!--Chart-->
-<div class="ct-chart ct-golden-section ct-chart-1" id="chart3"></div>
+<div class="ct-chart ct-golden-section ct-chart-1" id="chart6"></div>
 ```
 4. Main HTML File: copy-paste the component code into your main HTML: 
 ```HTML
@@ -359,7 +383,7 @@ In the the simpleBarChart2 html you would need to change the id="chart1" to id="
 4. Open your charts.js file (this is in the scripts folder). 
 5. Duplicate the data1 variable and re-name it to data3:
 ```javascript
-var data3 = {
+var dataBarChart = {
     labels: ['070124a','71104','71224','72254','73124','73194','76184','78024','78154','82015','84035','84074','85045','86124','86234','87244','91124','91234'],
     series: [
         { "name": "Category A", "data": [6685,10784,15066,9861,8074,22953,2294,28571,24586,12475,3502,1079,8668,2748,20086,12966,15997,15025]},
@@ -370,16 +394,16 @@ var data3 = {
 6. Duplicate the command that creates the chart: 
 ```javascript
 // Create Bar Chart
-new Chartist.Bar('#chart1', data1, options, responsiveOptions);
+new Chartist.Bar('#chart1', dataBarChart, options, responsiveOptions);
 
 ```
 7. You would need to edit 2 things here: 
-* The chart ID (#chart1 -> #chart3) and 
-* the source of the data (data1 -> data3), 
+* The chart ID (#chart1 -> #chart6) and 
+* the source of the data (dataBarChart -> dataBarChart2 (or to anything else that does not match the rest of the data variables in the file)), 
 therefore you would end up with this: 
 ```javascript
 // Create Bar Chart
-new Chartist.Bar('#chart3', data3, options, responsiveOptions);
+new Chartist.Bar('#chart6', dataBarChart2, options, responsiveOptions);
 
 ```
 And that's it.
