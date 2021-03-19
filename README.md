@@ -381,9 +381,9 @@ In the the simpleBarChart2 html you would need to change the id="chart1" to id="
 <div data-include="simpleBarChart2"></div>
 ```
 4. Open your charts.js file (this is in the scripts folder). 
-5. Duplicate the data1 variable and re-name it to data3:
+5. Duplicate the dataBarChart variable and re-name it to dataBarChart2:
 ```javascript
-var dataBarChart = {
+var dataBarChart2 = {
     labels: ['070124a','71104','71224','72254','73124','73194','76184','78024','78154','82015','84035','84074','85045','86124','86234','87244','91124','91234'],
     series: [
         { "name": "Category A", "data": [6685,10784,15066,9861,8074,22953,2294,28571,24586,12475,3502,1079,8668,2748,20086,12966,15997,15025]},
@@ -404,6 +404,5 @@ therefore you would end up with this:
 ```javascript
 // Create Bar Chart
 new Chartist.Bar('#chart6', dataBarChart2, options, responsiveOptions);
-
 ```
 And that's it.
