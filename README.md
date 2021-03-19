@@ -342,7 +342,7 @@ labels: ['070124a','71104','71224','72254','73124','73194','76184','78024','7815
 ```
 
 #### _I want to edit the data of my chart:_
-Let's say that you want to edit labels of your Bar Chart. In case of this you want to take a look at the **data1** variable again and edit the **series** option:
+Let's say that you want to edit labels of your Bar Chart. In case of this you want to take a look at the **dataBarChart** variable again and edit the **series** option:
 ```javascript
 series: [
     { "name": "Category A", "data": [6685,10784,15066,9861,8074,22953,2294,28571,24586,12475,3502,1079,8668,2748,20086,12966,15997,15025]},
