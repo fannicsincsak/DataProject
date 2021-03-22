@@ -843,8 +843,50 @@ body .header:not(:first-child){
 /*BATCH - Uploader*/
 #files {
     overflow-y: scroll !important;
-    min-height: 320px;
+    margin-bottom: 0;
+    margin-top: 20px;
+    padding: 16px !important;
+    background-color: rgba(0, 165, 187, 0.05);
+    color: #002039;
+    border-radius: 20px;
+    border: solid 1px rgba(0, 32, 57, 0.15)
 }
+
+#files .text-muted{
+    color: #002039 !important;
+    opacity: 0.8;
+}
+
+#files .progress .bg-success{
+    background-color: #00A5BB !important;
+}
+#files .text-success{
+    color: #00A5BB !important;
+}
+
+#files .progress .bg-warning{
+    background-color: #FFC107 !important;
+}
+#files .text-warning{
+    color: #FFC107 !important;
+}
+
+#files .progress .bg-danger{
+    background-color: #DC3545 !important;
+}
+#files .text-danger{
+    color: #DC3545 !important;
+}
+
+#files hr{
+    display: none !important;
+}
+
+#files .media-body,
+#files .progress{
+    margin: 0 !important;
+}
+
 #debug {
     overflow-y: scroll !important;
     height: 180px;
@@ -890,8 +932,8 @@ body .header:not(:first-child){
     font-size: 18px;
     line-height: 21px;
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .upload-supporting-text{
@@ -911,6 +953,27 @@ body .header:not(:first-child){
     text-align: center;
 }
 
-.upload-button{
-
+#upload-btn{
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+    display: none !important;
 }
+
+.upload-texts{
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.upload-btn-text{
+    text-decoration-line: underline;
+    color: #00A5BB;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    cursor: pointer;
+    padding-left: 4px;
+    margin-bottom: 0 !important;
+}
+

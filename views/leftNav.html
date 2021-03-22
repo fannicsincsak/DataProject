@@ -13,7 +13,7 @@
                 <span class="menu-collapsed">Batch Prediction</span>
             </span>
         </a>
-        <a href="history.html" class="active list-group-item list-group-item-action">
+        <a href="history.html" class="list-group-item list-group-item-action">
             <span class="d-flex w-100 justify-content-start align-items-center">
                 <span class="menu-icon menu-history"></span>
                 <span class="menu-collapsed">History</span>
@@ -85,4 +85,10 @@
 <script type="text/javascript" src="scripts/menu.js"></script>
 <!--Updates all relevant elements when menu expands/minimizes -->
 <script type="text/javascript" src="scripts/update.js"></script>
+
+<script>
+    $( document ).on( 'click', '.list-group .list-group-item', function ( e ) {
+        $( this ).addClass( 'active' ).siblings().removeClass( 'active' );
+    } );
+</script>
 

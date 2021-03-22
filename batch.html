@@ -41,26 +41,18 @@
 
                             <div class="col-md-6 col-sm-12">
                                 <div class="upload-box">
-                                    <div class="upload-title">Upload</div>
+                                    <div class="upload-title">Upload a file</div>
                                     <!-- Our markup, the important part here! -->
                                     <div id="drag-and-drop-zone" class="dm-uploader p-5">
                                         <div class="upload-image"></div>
-                                        <div class="drop-text">Drop your file here, or browse</div>
-                                        <div>
-                                            <input class="upload-button" type="file" title='browse' />
+                                        <div class="d-flex upload-texts">
+                                            <div class="drop-text">Drop your file here, or </div>
+                                            <label class="upload-btn-text" for="upload-btn">browse</label>
+                                            <input class="upload-button" type="file" title='browse' id="upload-btn" />
                                         </div>
                                         <div class="upload-supporting-text">Supports: CSV ·  Limit: 200MB/file</div>
                                     </div><!-- /uploader -->
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 col-sm-12">
-                                <div class="card h-100">
-                                    <div class="card-header">
-                                        File List
-                                    </div>
-
-                                    <ul class="list-unstyled p-2 d-flex flex-column col" id="files">
+                                    <ul class="list-unstyled p-2 d-flex flex-column col files" id="files">
                                         <li class="text-muted text-center empty">No files uploaded.</li>
                                     </ul>
                                 </div>
@@ -74,7 +66,8 @@
 
                         <div class="row">
                             <div class="col-12">
-                                <div class="card h-100">
+                                <h4 class="mt-5">We will delete this after testing the back-end:</h4>
+                                <div class="card">
                                     <div class="card-header">
                                         Debug Messages
                                     </div>
@@ -109,4 +102,7 @@
     <script type="text/javascript" src="js/jquery.dm-uploader.js"></script>
     <script type="text/javascript" src="scripts/uploader.js"></script>
     <script type="text/javascript" src="scripts/uploader-config.js"></script>
+
+
+
 </html>
