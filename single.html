@@ -8,18 +8,12 @@
     <!--Font: Roboto-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <!--Custom CSS-->
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
     <!--Bootstrap-->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
     <link href="css/bootstrap-grid.min.css" rel="stylesheet" type="text/css" media="all">
     <link href="css/bootstrap-reboot.min.css" rel="stylesheet" type="text/css" media="all">
-    <!--FontAwesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-1/css/all.min.css" integrity="sha512-wDB6AYiYP4FO5Sxieamqy9wtpAY3qdHMqlhZecIEUu1YjkLw5gQf/4ZDgOzmCBAF5SheMjmugkpUSVoUrGbLkQ==" crossorigin="anonymous" />
-    <!--Data Table-->
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.css">
-    <!--Chart CSS 2-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.11.4/chartist.min.css" integrity="sha512-V0+DPzYyLzIiMiWCg3nNdY+NyIiK9bED/T1xNBj08CaIUyK3sXRpB26OUCIzujMevxY9TRJFHQIxTwgzb0jVLg==" crossorigin="anonymous" />
+    <!--Custom CSS-->
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
     <!--jQuery-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ==" crossorigin="anonymous"></script>
     <!--Popper JS-->
@@ -41,28 +35,38 @@
 
             <!--Header-->
             <div class="header">
-                <div class="header-title">Fetch Historical Predictions</div>
-                <!--Delete from here if you don't need the select-->
-                <div class="row select-row">
-                    <div class="col-md-4">
-                        <label class="select-label" for="id_label_single">
-                            Select date
-                            <select class="js-example-basic-single select2-dates form-control" id="id_label_single">
-                                <option value="one" disabled="disabled">Select</option>
-                                <option value="two">February 16, 2021 16:00</option>
-                                <option value="three">February 15, 2021 16:00</option>
-                                <option value="four">February 14, 2021 16:00</option>
-                                <option value="five">February 13, 2021 16:00</option>
-                                <option value="six">February 12, 2021 16:00</option>
-                                <option value="seven">February 11, 2021 16:00</option>
-                            </select>
-                        </label>
-                    </div>
-                </div> <!--Delete until this if you don't need the select-->
+                <div class="header-title">Single/One Sample Prediction</div>
             </div><!--Header Ends-->
 
             <!--Paste your components below-->
 
+            <!--Main Title-->
+            <div class="section-title">This is the title of the below form</div>
+            <!--Form-->
+            <div class="form-component">
+                <!--Subtitle-->
+                <div class="title-row">
+                    <div class="component-title">Subtitle</div>
+                </div>
+
+                <!--We start adding the form elements from here-->
+                <div class="col-md-12">
+                    <div class="row">
+                        <form>
+
+                        <!--2 Inputs next to each other-->
+                        <!--2 Selects next to each other-->
+
+                        <!--One Input and One Select next to each other-->
+
+                        <!--2 Date Range Inputs next to each other-->
+
+                        <!--Button-->
+
+                        </form>
+                    </div>
+                </div>
+            </div>
 
             <!--Don't paste components below-->
             <!-------------------------------------------CONTENT ENDS------------------------------------------->
@@ -82,23 +86,12 @@
 <script type="text/javascript" src="scripts/include.js"></script>
 <!--Menu Collapse (Added to leftNav.html)-->
 <script type="text/javascript" src="scripts/menu.js"></script>
-<!--FontAwesome-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-1/js/all.min.js" integrity="sha512-f5QPU3RiT/dsiLME06F2IxfAW8EujygVNj2rPK93XqHm4dvuB0p/DnNiVgKQE2fxxNeASmUA9+5NjkKYk1loHg==" crossorigin="anonymous"></script>
-<!--Data Table-->
-<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.js"></script>
-<!--Chart JS 2.0-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.11.4/chartist.min.js" integrity="sha512-9rxMbTkN9JcgG5euudGbdIbhFZ7KGyAuVomdQDI9qXfPply9BJh0iqA7E/moLCatH2JD4xBGHwV6ezBkCpnjRQ==" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/chartist-plugin-legend/0.6.2/chartist-plugin-legend.js" integrity="sha512-CBRJixgx8naN06wpNL+R/devoQkEHZy+DET78kCXZx4zzTKotHfdP2r469yQ4Kme2qnxF51Jl+X5khe+OC6S/A==" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/chartist-plugin-legend/0.6.2/chartist-plugin-legend.min.js.map" ></script>
-<!--Custom Chart JS-->
-<script type="text/javascript" src="scripts/charts.js"></script>
 <!--Select 2-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js" integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A==" crossorigin="anonymous"></script>
 <!--Custom Select JS-->
 <script type="text/javascript" src="scripts/select.js"></script>
 <!--Resize Sensor-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/css-element-queries/1.2.3/ResizeSensor.js" integrity="sha512-TH1YiqLIcRRGn+EOLBXfHtoZfGaPGROB6sEcSC0TK+72bc7Xhn9P/JqaSX+3jw3mxOSdXRuAIZjedCJQtmYfWA==" crossorigin="anonymous"></script>
-
 <script>
 
     $(".select2-dates").select2({

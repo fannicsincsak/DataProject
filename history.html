@@ -14,14 +14,14 @@
         <link href="css/bootstrap-reboot.min.css" rel="stylesheet" type="text/css" media="all">
         <!--Custom CSS-->
         <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
-        <!--FontAwesome-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-1/css/all.min.css" integrity="sha512-wDB6AYiYP4FO5Sxieamqy9wtpAY3qdHMqlhZecIEUu1YjkLw5gQf/4ZDgOzmCBAF5SheMjmugkpUSVoUrGbLkQ==" crossorigin="anonymous" />
-        <!--Data Table-->
+         <!--Data Table-->
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.css">
         <!--Chart CSS 2-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.11.4/chartist.min.css" integrity="sha512-V0+DPzYyLzIiMiWCg3nNdY+NyIiK9bED/T1xNBj08CaIUyK3sXRpB26OUCIzujMevxY9TRJFHQIxTwgzb0jVLg==" crossorigin="anonymous" />
         <!--jQuery-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ==" crossorigin="anonymous"></script>
+        <!--Popper JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <!--Select 2-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw==" crossorigin="anonymous" />
     </head>
@@ -152,13 +152,13 @@
     <script type="text/javascript" src="scripts/select.js"></script>
     <!--Resize Sensor-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/css-element-queries/1.2.3/ResizeSensor.js" integrity="sha512-TH1YiqLIcRRGn+EOLBXfHtoZfGaPGROB6sEcSC0TK+72bc7Xhn9P/JqaSX+3jw3mxOSdXRuAIZjedCJQtmYfWA==" crossorigin="anonymous"></script>
-<script>
 
-    $(".select2-dates").select2({
-        width: '100%',
-        minimumResultsForSearch: -1,
-    });
-</script>
+    <script>
+        $(".select2-dates").select2({
+            width: '100%',
+            minimumResultsForSearch: -1,
+        });
+    </script>
 
     <script>
         $('#button-collapse').on('click', function () {
@@ -166,4 +166,15 @@
         })
     </script>
 
+    <script>
+        $('#id_label_single').one('select2:open', function(e) {
+            $('input.select2-search__field').prop('placeholder', 'Search...');
+        });
+        $('#id_label_single_2').one('select2:open', function(e) {
+            $('input.select2-search__field').prop('placeholder', 'Search...');
+        });
+        $('#id_label_single_3').one('select2:open', function(e) {
+            $('input.select2-search__field').prop('placeholder', 'Search...');
+        });
+    </script>
 </html>

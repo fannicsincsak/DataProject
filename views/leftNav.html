@@ -1,7 +1,7 @@
 <!-- Sidebar -->
 <div id="sidebar-container" class="sidebar-expanded d-none d-md-block"><!-- d-* hiddens the Sidebar in smaller devices. Its itens can be kept on the Navbar 'Menu' -->
     <!-- Bootstrap List Group -->
-    <ul class="list-group">
+    <div class="list-group">
         <!-- Logo -->
         <li class="list-group-item logo-separator d-flex justify-content-center">
             <div class="menu-logo"></div>
@@ -59,8 +59,20 @@
                 <span id="collapse-icon"></span>
             </span>
         </a>
-
-    </ul><!-- List Group END-->
+    </div><!-- List Group END-->
+    <!--Dropdown-->
+    <div class="btn-group dropup dropup-company">
+        <button class="company-dropdown dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="d-flex company-details">
+                    <span class="company-image"></span>
+                    <span class="company-text">Alberta Pacific</span>
+                </span>
+            <span class="company-dots"></span>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenu">
+            <button class="dropdown-item" type="button">Log Out</button>
+        </div>
+    </div>
 </div><!-- sidebar-container END -->
 
 <!------------------------------------DEPENDENCIES FOR THIS FILE ONLY------------------------------------>
@@ -76,19 +88,13 @@
 <link href="css/bootstrap-reboot.min.css" rel="stylesheet" type="text/css" media="all">
 <!--FontAwesome-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-1/css/all.min.css" integrity="sha512-wDB6AYiYP4FO5Sxieamqy9wtpAY3qdHMqlhZecIEUu1YjkLw5gQf/4ZDgOzmCBAF5SheMjmugkpUSVoUrGbLkQ==" crossorigin="anonymous" />
-
 <!--jQuery-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!--Popper JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <!--Bootstrap-->
 <script type="text/javascript" src="js/bootstrap.js"></script>
 <!--Menu Collapse (Added to leftNav.html)-->
 <script type="text/javascript" src="scripts/menu.js"></script>
 <!--Updates all relevant elements when menu expands/minimizes -->
 <script type="text/javascript" src="scripts/update.js"></script>
-
-<script>
-    $( document ).on( 'click', '.list-group .list-group-item', function ( e ) {
-        $( this ).addClass( 'active' ).siblings().removeClass( 'active' );
-    } );
-</script>
-
