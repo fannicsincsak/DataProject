@@ -1,109 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Pilot</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Pilot</title>
 
-    <!-------------------------------------------CSS FILES------------------------------------------->
-    <!--Font: Roboto-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <!--Bootstrap-->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
-    <link href="css/bootstrap-grid.min.css" rel="stylesheet" type="text/css" media="all">
-    <link href="css/bootstrap-reboot.min.css" rel="stylesheet" type="text/css" media="all">
-    <!--Custom CSS-->
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
-    <!--jQuery-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ==" crossorigin="anonymous"></script>
-    <!--Popper JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <!--Select 2-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw==" crossorigin="anonymous" />
-</head>
+        <!-------------------------------------------CSS FILES------------------------------------------->
+        <!--Font: Roboto-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <!--Bootstrap-->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+        <link href="css/bootstrap-grid.min.css" rel="stylesheet" type="text/css" media="all">
+        <link href="css/bootstrap-reboot.min.css" rel="stylesheet" type="text/css" media="all">
+        <!--Custom CSS-->
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+        <!--Range Slider CSS-->
+        <link href="css/ui-range.css" rel="stylesheet" type="text/css" media="all">
+        <!--jQuery-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous"></script>
+        <!--Popper JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <!--Select 2-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw==" crossorigin="anonymous" />
+        <!--Tooltips-->
+        <link href="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.2.7/dist/jBox.all.min.css" rel="stylesheet">
+    </head>
 
-<body>
+    <body>
 
 
-<div class="container-fluid p-0">
-    <div class="row" id="body-row">
-        <div data-include="leftNav" style="z-index: 2"></div>
-        <!-- MAIN -->
-        <div class="col body-content">
+        <div class="container-fluid p-0">
+            <div class="row" id="body-row">
+                <div data-include="leftNav" style="z-index: 2"></div>
+                <!-- MAIN -->
+                <div class="col body-content">
 
-            <!-------------------------------------------CONTENT TO EDIT------------------------------------------->
+                    <!-------------------------------------------CONTENT TO EDIT------------------------------------------->
 
-            <!--Header-->
-            <div class="header">
-                <div class="header-title">Single/One Sample Prediction</div>
-            </div><!--Header Ends-->
+                    <!--Header-->
+                    <div class="header">
+                        <div class="header-title">Single/One Sample Prediction</div>
+                    </div><!--Header Ends-->
 
-            <!--Paste your components below-->
+                    <!--Paste your components below-->
 
-            <!--Main Title-->
-            <div class="section-title">This is the title of the below form</div>
-            <!--Form-->
-            <div class="form-component">
-                <!--Subtitle-->
-                <div class="title-row">
-                    <div class="component-title">Subtitle</div>
-                </div>
+                    <!--Main Title-->
+                    <div class="section-title">This is the title of the below form</div>
+                    <!--Form-->
+                    <div class="form-component">
+                        <!--Subtitle-->
+                        <div class="title-row">
+                            <div class="component-title">Subtitle</div>
+                        </div>
 
-                <!--We start adding the form elements from here-->
-                <div class="col-md-12">
-                    <div class="row">
+                        <!--Form starts here-->
                         <form>
+                            <div class="col-md-12">
+                                <!--We start adding the form elements from here-->
 
-                        <!--2 Inputs next to each other-->
-                        <!--2 Selects next to each other-->
+                                <!--2 Inputs next to each other-->
+                                <div class="row">
+                                    <!--1/2 of the Row-->
+                                    <div class="col-md-6">
+                                        <!--Input #1 - on the left-->
+                                        <div class="form-group">
+                                            <!--Label with Tooltip-->
+                                            <div class="label-with-tooltip d-flex">
+                                                <label for="exampleInput1">Input Label #1</label>
+                                                <div id="Tooltip-1" class="custom-tooltip"></div>
+                                            </div><!--Label with Tooltip Ends-->
+                                            <input type="text" class="form-control" id="exampleInput1" aria-describedby="emailHelp" placeholder="Placeholder for Input #1">
+                                        </div>
+                                    </div>
+                                    <!--2/2 of the Row-->
+                                    <div class="col-md-6">
+                                        <!--Input #2 - on the right-->
+                                        <div class="form-group">
+                                            <label for="exampleInput2">Input Label #2</label>
+                                            <input type="text" class="form-control" id="exampleInput2" aria-describedby="emailHelp" placeholder="Placeholder for Input #2">
+                                        </div>
+                                    </div>
+                                </div>
 
-                        <!--One Input and One Select next to each other-->
+                                <!--2 Selects next to each other-->
+                                <div class="row">
+                                    <!--1/2 of the Row-->
+                                    <div class="col-md-6">
+                                        <!--Select #1 - on the left-->
+                                        <div class="form-group">
+                                            <label class="select-label" for="id_label_single_1">
+                                                Select Label #1
+                                                <select class="js-example-basic-single select-2-normal form-control" id="id_label_single_1">
+                                                    <option value="one" selected="selected" disabled="disabled">Select</option>
+                                                    <option value="two">Option 1</option>
+                                                    <option value="three">Option 2</option>
+                                                    <option value="four">Option 3</option>
+                                                    <option value="five">Option 4</option>
+                                                    <option value="six">Option 5</option>
+                                                    <option value="seven">Option 6</option>
+                                                </select>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <!--2/2 of the Row-->
+                                    <div class="col-md-6">
+                                        <!--Select #2 - on the right-->
+                                        <div class="form-group">
+                                            <label class="select-label" for="id_label_single_2">
+                                                Select Label #2
+                                                <select class="js-example-basic-single select-2-normal form-control" id="id_label_single_2">
+                                                    <option value="one" selected="selected" disabled="disabled">Select</option>
+                                                    <option value="two">Option 1</option>
+                                                    <option value="three">Option 2</option>
+                                                    <option value="four">Option 3</option>
+                                                    <option value="five">Option 4</option>
+                                                    <option value="six">Option 5</option>
+                                                    <option value="seven">Option 6</option>
+                                                </select>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
 
-                        <!--2 Date Range Inputs next to each other-->
+                                <!--One Input and One Select next to each other-->
+                                <div class="row">
+                                    <!--1/2 of the Row-->
+                                    <div class="col-md-6">
+                                        <!--Input #1 - on the left-->
+                                        <div class="form-group">
+                                            <!--Label with Tooltip-->
+                                            <div class="label-with-tooltip d-flex">
+                                                <label for="exampleInput3">Input Label on the Left</label>
+                                                <div id="Tooltip-2" class="custom-tooltip"></div>
+                                            </div><!--Label with Tooltip Ends-->
+                                            <input type="text" class="form-control" id="exampleInput3" aria-describedby="emailHelp" placeholder="Placeholder for Input #1">
+                                        </div>
+                                    </div>
+                                    <!--2/2 of the Row-->
+                                    <div class="col-md-6">
+                                        <!--Select #1 - on the right-->
+                                        <div class="form-group">
+                                            <label class="select-label" for="id_label_single_3">
+                                                Select No Search
+                                                <select class="js-example-basic-single select-2-normal select2-no-search form-control" id="id_label_single_3">
+                                                    <option value="one" selected="selected" disabled="disabled">Select</option>
+                                                    <option value="two">Option 1</option>
+                                                    <option value="three">Option 2</option>
+                                                    <option value="four">Option 3</option>
+                                                    <option value="five">Option 4</option>
+                                                    <option value="six">Option 5</option>
+                                                    <option value="seven">Option 6</option>
+                                                </select>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
 
-                        <!--Button-->
+                                <!--Increase and Decrease Input and Range Slider-->
+                                <div class="row">
+                                    <!--1/2 of the Row-->
+                                    <div class="col-md-6">
+                                        <!--Increase and Decrease on the left-->
+                                        <div class="form-group inc-dec-input">
+                                            <label for="exampleInput4">Increase and Decrease Input</label>
+                                            <div class="controls">
+                                                <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                                                <input type="number" id="exampleInput4" value="0" />
+                                                <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--2/2 of the Row-->
+                                    <div class="col-md-6">
+                                        <!--Range Slider on the right-->
+                                        <div class="form-group">
+                                            <label for="range">Range Slider</label>
+                                            <div class="range-slider" style='--min:0; --max:100; --value:75; --text-value:"75"; --suffix:"%"'>
+                                                <input id="range" type="range" min="0" max="100" value="75" oninput="this.parentNode.style.setProperty('--value',this.value); this.parentNode.style.setProperty('--text-value', JSON.stringify(this.value))">
+                                                <output></output>
+                                                <div class='range-slider__progress'></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-                        </form>
+                                <!--Date Pickers-->
+                                <div class="row">
+                                    <!--1/2 of the Row-->
+                                    <div class="col-md-6">
+                                        <!--Datepicker #1 - on the left-->
+                                        <div class="form-group">
+                                            <label for="datepicker1">Datepicker Single</label>
+                                            <input type="text" id="datepicker1" class="form-control" placeholder="Select a Date">
+                                        </div>
+                                    </div>
+                                    <!--2/2 of the Row
+                                    We want to have 2 Datepickers next to each other, therefore we add a new row and 2 more col-md-6 divs-->
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <!--DatePicker 1/2-->
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="datepicker2">Start Date</label>
+                                                    <input type="text" id="datepicker2" class="form-control" placeholder="Select Start Date">
+                                                </div>
+                                            </div>
+                                            <!--DatePicker 2/2-->
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="datepicker3">End Date</label>
+                                                    <input type="text" id="datepicker3" class="form-control" placeholder="Select End Date">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+                                <!--Checkbox-->
+
+
+
+                                <!--Select Dates-->
+
+
+                                <!--Button in a new row-->
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <button type="submit" class="button-main">Make Sample Prediction</button>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </form><!--Form ends here-->
                     </div>
+
+                    <!--Don't paste components below-->
+
+                    <!-------------------------------------------CONTENT ENDS------------------------------------------->
+
                 </div>
             </div>
-
-            <!--Don't paste components below-->
-            <!-------------------------------------------CONTENT ENDS------------------------------------------->
-
-
         </div>
-    </div>
-</div>
-</body>
+    </body>
 
 
-<!-------------------------------------------SCRIPTS------------------------------------------->
+    <!-------------------------------------------SCRIPTS------------------------------------------->
 
-<!--Bootstrap-->
-<script type="text/javascript" src="js/bootstrap.js"></script>
-<!--Include HTML in HTML-->
-<script type="text/javascript" src="scripts/include.js"></script>
-<!--Menu Collapse (Added to leftNav.html)-->
-<script type="text/javascript" src="scripts/menu.js"></script>
-<!--Select 2-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js" integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A==" crossorigin="anonymous"></script>
-<!--Custom Select JS-->
-<script type="text/javascript" src="scripts/select.js"></script>
-<!--Resize Sensor-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/css-element-queries/1.2.3/ResizeSensor.js" integrity="sha512-TH1YiqLIcRRGn+EOLBXfHtoZfGaPGROB6sEcSC0TK+72bc7Xhn9P/JqaSX+3jw3mxOSdXRuAIZjedCJQtmYfWA==" crossorigin="anonymous"></script>
-<script>
+    <!--Bootstrap-->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!--Include HTML in HTML-->
+    <script type="text/javascript" src="scripts/include.js"></script>
+    <!--Menu Collapse (Added to leftNav.html)-->
+    <script type="text/javascript" src="scripts/menu.js"></script>
+    <!--Select 2-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js" integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A==" crossorigin="anonymous"></script>
+    <!--Custom Select JS-->
+    <script type="text/javascript" src="scripts/select.js"></script>
+    <!--Resize Sensor-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/css-element-queries/1.2.3/ResizeSensor.js" integrity="sha512-TH1YiqLIcRRGn+EOLBXfHtoZfGaPGROB6sEcSC0TK+72bc7Xhn9P/JqaSX+3jw3mxOSdXRuAIZjedCJQtmYfWA==" crossorigin="anonymous"></script>
+    <!--Tooltips Library-->
+    <script src="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.2.7/dist/jBox.all.min.js"></script>
+    <!--Customize Tooltips-->
+    <script type="text/javascript" src="scripts/tooltips.js"></script>
 
-    $(".select2-dates").select2({
-        width: '100%',
-        minimumResultsForSearch: -1,
-    });
-</script>
+    <!--Necessary in terms of Selects -->
+    <script>
+        $(".select-2-normal").select2({
+            width: '100%',
+        });
+        $(".select2-no-search").select2({
+            width: '100%',
+            minimumResultsForSearch: -1,
+        });
+    </script>
 
-<script>
-    $('#button-collapse').on('click', function () {
-        $('#simpleTable').DataTable().columns.adjust();
-    })
-</script>
+    <!---Turning Placeholder Texts in Select Search Boxes into "Search..."-->
+    <script>
+        $('#id_label_single_1').one('select2:open', function(e) {
+            $('input.select2-search__field').prop('placeholder', 'Search...');
+        });
+        $('#id_label_single_2').one('select2:open', function(e) {
+            $('input.select2-search__field').prop('placeholder', 'Search...');
+        });
+        $('#id_label_single_3').one('select2:open', function(e) {
+            $('input.select2-search__field').prop('placeholder', 'Search...');
+        });
+    </script>
+
+    <!--Increase/Decrease Input-->
+    <script>
+        function increaseValue() {
+            var value = parseInt(document.getElementById('exampleInput4').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById('exampleInput4').value = value;
+        }
+
+        function decreaseValue() {
+            var value = parseInt(document.getElementById('exampleInput4').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value < 1 ? value = 1 : '';
+            value--;
+            document.getElementById('exampleInput4').value = value;
+        }
+    </script>
+
+    <!--Datepicker-->
+    <script>
+        $( function() {
+            $( "#datepicker1" ).datepicker();
+        } );
+        $( function() {
+            $( "#datepicker2" ).datepicker();
+        } );
+        $( function() {
+            $( "#datepicker3" ).datepicker();
+        } );
+    </script>
 
 </html>
