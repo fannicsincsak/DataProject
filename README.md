@@ -462,15 +462,31 @@ F. Date Picker,
 G. Tooltips.
 
 ### A. Input
+You only have to make sure that the for's value in the label ("exampleInput2") matches the id's value in the input (they have to be the same).
 ```HTML
-
-
+<div class="form-group">
+    <label for="exampleInput2">Input Label #2</label>
+    <input type="text" class="form-control" id="exampleInput2" aria-describedby="emailHelp" placeholder="Placeholder for Input #2">
+</div>
 ```
 
 ### B. Select
 ```HTML
-
-
+You only have to make sure that the for's value in the label ("id_label_single_1") matches the id's value in the select (they have to be the same).
+<div class="form-group">
+    <label class="select-label" for="id_label_single_1">
+        Select Label #1
+        <select class="js-example-basic-single select-2-normal form-control" id="id_label_single_1">
+            <option value="one" selected="selected" disabled="disabled">Select</option>
+            <option value="two">Option 1</option>
+            <option value="three">Option 2</option>
+            <option value="four">Option 3</option>
+            <option value="five">Option 4</option>
+            <option value="six">Option 5</option>
+            <option value="seven">Option 6</option>
+        </select>
+    </label>
+</div>
 ```
 
 ### C. Select with search bar
