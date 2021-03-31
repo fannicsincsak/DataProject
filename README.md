@@ -1,6 +1,21 @@
 # DataProject
 
-# Pages
+# Table of Contents
+[1. Pages](#1-pages)
+
+[2. Batch Prediction Page](#2-batch-prediction-page)
+
+[3. Historical Prediction Page](#3-historical-prediction-page)
+
+[4. Single/One Sample Prediction Page](#4-single-one-sample-prediction-page)
+
+[5. Bootstrap Use Cases](#5-bootstrap-use-cases)
+
+[6. Dependencies](#6-dependencies)
+
+[7. Issues and Future Tasks](#7-issues-and-future-tasks)
+
+# 1. Pages
 **Main Pages**
 * Batch Prediction = batch.html
 * Historical Prediction = history.html
@@ -15,22 +30,10 @@
 * Chart HTMLs: simpleBarChart.html, stackedBarChart.html, horizontalBarChart.html, simpleLineChart.html, areaLineChart.html (can be used on batch.html, single.html and history.html)
 * fourBoxes.html: 4 boxes next to each other, this can be used anywhere (no dependencies)
 
-# Table of Contents
-[1. Batch Prediction Page](#1-batch-prediction-page)
 
-[2. Historical Prediction Page](#2-historical-prediction-page)
+# 2. Batch Prediction Page
 
-[3. Single/One Sample Prediction Page](#3-single-one-sample-prediction-page)
-
-[4. Bootstrap Use Cases](#4-bootstrap-use-cases)
-
-[5. Dependencies](#5-dependencies)
-
-[6. Issues and Future Tasks](#6-issues-and-future-tasks)
-
-# 1. Batch Prediction Page
-
-# 2. Historical Prediction Page
+# 3. Historical Prediction Page
 ### History Page Contents
 [1. Structural Overview](#1-structural-overview)
 
@@ -438,10 +441,10 @@ new Chartist.Bar('#chart6', dataBarChart2, options, responsiveOptions);
 ```
 And that's it.
 
-# 3. Single One Sample Prediction Page
+# 4. Single One Sample Prediction Page
 
-# 4. Bootstrap Use Cases
+# 5. Bootstrap Use Cases
 
-# 5. Dependencies
+# 6. Dependencies
 
-# 6. Issues and Future Tasks
+# 7. Issues and Future Tasks
