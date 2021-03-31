@@ -450,6 +450,11 @@ And that's it.
 # 6. Bootstrap Use Cases
 
 # 7. Dependencies
+[7.1. General and Recurring](#71-general-and-recurring)
+
+[7.2. Component Specific](#72-component-specific)
+
+## 7.1. General and Recurring
 ### Font: Roboto
 ```HTML
 <!--2 CSS Dependencies-->
@@ -471,6 +476,20 @@ And that's it.
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
 ```
 
+### jQuery
+```HTML
+<!--JS Dependency-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+```
+
+### Popper: to make Dropdowns work (especially in the left menu)
+```HTML
+<!--JS Dependency-->
+<!--Popper JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+```
+
+## 7.2. Component Specific
 ### Data Tables CSS and JS
 ```HTML
 <!--CSS Dependency-->
@@ -492,7 +511,33 @@ And that's it.
 
 <!--Chartist Legend JS map file-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/chartist-plugin-legend/0.6.2/chartist-plugin-legend.min.js.map" ></script>
+```
 
+### Custom Chart JS: to apply styles annd fill them with data
+```HTML
+<!--JS Dependency-->
+<script type="text/javascript" src="scripts/charts.js"></script>
+```
+
+### Select 2: to customize the styling of selects
+```HTML
+<!--CSS Dependency-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css"/>
+
+<!--JS Dependency-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+```
+
+### Custom Select 2 JS: to further customize our selects
+```HTML
+<!--JS Dependency-->
+<script type="text/javascript" src="scripts/select.js"></script>
+```
+
+### Resize Sensor: to make sure that the Tables and the Charts will be streched with a 100% width on the pages, especially when the left menu changes width (expanded/minimized states)
+```HTML
+<!--JS Dependency-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/css-element-queries/1.2.3/ResizeSensor.js"></script>
 ```
 
 ### Title
@@ -503,7 +548,6 @@ And that's it.
 
 ```
 
-
 ### Title
 ```HTML
 <!--CSS Dependency-->
@@ -511,7 +555,6 @@ And that's it.
 <!--JS Dependency-->
 
 ```
-
 
 ### Title
 ```HTML
