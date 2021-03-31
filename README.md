@@ -497,6 +497,13 @@ G. Tooltips.
 
 ```
 
+
+### G. Tooltips
+```HTML
+
+
+```
+
 # 6. Bootstrap Use Cases
 
 # 7. Dependencies
