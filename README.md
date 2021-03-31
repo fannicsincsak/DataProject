@@ -26,7 +26,7 @@
 
 [5. Dependencies](#5-dependencies)
 
-[6. Issues & TODOs](#6-issues-todoes)
+[6. Issues and TODOs](#6-issues-and-todoes)
 
 # 1. Batch Prediction Page
 
@@ -438,10 +438,10 @@ new Chartist.Bar('#chart6', dataBarChart2, options, responsiveOptions);
 ```
 And that's it.
 
-# 3. Single/One Sample Prediction Page
+# 3. Single One Sample Prediction Page
 
 # 4. Bootstrap Use Cases
 
 # 5. Dependencies
 
-# 6. Issues & TODOs
+# 6. Issues and TODOs
