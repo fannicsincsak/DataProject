@@ -485,8 +485,19 @@ And that's it.
 ### Popper: to make Dropdowns work (especially in the left menu)
 ```HTML
 <!--JS Dependency-->
-<!--Popper JS-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+```
+
+### Include HTML in HTML
+```HTML
+<!--JS Dependency-->
+<script type="text/javascript" src="scripts/include.js"></script>
+```
+
+### Make the menu work: expand and minimize
+```HTML
+<!--JS Dependency-->
+<script type="text/javascript" src="scripts/menu.js"></script>
 ```
 
 ## 7.2. Component Specific
@@ -534,18 +545,25 @@ And that's it.
 <script type="text/javascript" src="scripts/select.js"></script>
 ```
 
-### Resize Sensor: to make sure that the Tables and the Charts will be streched with a 100% width on the pages, especially when the left menu changes width (expanded/minimized states)
+### Resize Sensor: to make sure that the Charts will be streched with a 100% width on the pages, especially when the left menu changes width (expanded/minimized states)
 ```HTML
 <!--JS Dependency-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/css-element-queries/1.2.3/ResizeSensor.js"></script>
 ```
 
-### Title
+### Batch Page: Uploader - This controls the behaviour of the uploading process
+Also, everything in the backend folder is connected to this component.
 ```HTML
-<!--CSS Dependency-->
+<!--3 JS Dependencies-->
 
-<!--JS Dependency-->
+<!--Main JS file-->
+<script type="text/javascript" src="js/jquery.dm-uploader.js"></script>
 
+<!--Defines the styling-->
+<script type="text/javascript" src="scripts/uploader.js"></script>
+
+<!--Defines the uploading process-->
+<script type="text/javascript" src="scripts/uploader-config.js"></script>
 ```
 
 ### Title
