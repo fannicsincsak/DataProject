@@ -451,7 +451,7 @@ A. Input,
 
 B. Select,
 
-C. Select with search bar,
+C. Select with no search bar,
 
 D. Increase and decrease input,
 
@@ -489,10 +489,30 @@ You only have to make sure that the for's value in the label ("id_label_single_1
 </div>
 ```
 
-### C. Select with search bar
+### C. Select with no search bar
+You can see that I've added an extra class to the select called "select2-no-search".
 ```HTML
-
-
+<div class="form-group">
+    <label class="select-label" for="id_label_single_3">
+        Select No Search
+        <select class="js-example-basic-single select-2-normal select2-no-search form-control" id="id_label_single_3">
+            <option value="one" selected="selected" disabled="disabled">Select</option>
+            <option value="two">Option 1</option>
+            <option value="three">Option 2</option>
+            <option value="four">Option 3</option>
+            <option value="five">Option 4</option>
+            <option value="six">Option 5</option>
+            <option value="seven">Option 6</option>
+        </select>
+    </label>
+</div>
+```
+You can add js to the end of the page between <script>add here</script> tags. You can see that I have used the "select2-no-search" class and the minimumResultsForSearch: -1 command hides the search bar.
+```javascritpt
+$(".select2-no-search").select2({
+    width: '100%',
+    minimumResultsForSearch: -1,
+});
 ```
 
 ### D. Increase and decrease input
