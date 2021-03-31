@@ -1,3 +1,82 @@
+<!-- Bootstrap NavBar -->
+<nav class="navbar navbar-expand-md">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">
+        <img class="navbar-logo" src="img/Logo.svg"/>
+    </a>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+            <!-- This menu is hidden in bigger devices with d-sm-none.
+           The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep all the useful sidebar itens exclusively for smaller screens  -->
+            <li class="nav-item d-sm-block d-md-none">
+                <a class="nav-link" href="batch.html">
+                     <span class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="menu-icon menu-batch"></span>
+                        <span class="menu-collapsed">Batch Prediction</span>
+                     </span>
+                </a>
+                <a class="nav-link" href="history.html">
+                   <span class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="menu-icon menu-history"></span>
+                        <span class="menu-collapsed">History</span>
+                    </span>
+                </a>
+                <a class="nav-link" href="single.html">
+                    <span class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="menu-icon menu-single"></span>
+                        <span class="menu-collapsed">Single Prediction</span>
+                    </span>
+                </a>
+
+                <div class="sep-title">SHORTCUTS</div>
+
+                <a class="nav-link" href="">
+                    <span class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="menu-icon menu-rerun"></span>
+                        <span class="option-flex">
+                            <span class="menu-collapsed">Rerun</span>
+                            <span class="shortcut">R</span>
+                        </span>
+                    </span>
+                </a>
+
+                <a class="nav-link" href="">
+                    <span class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="menu-icon menu-cache"></span>
+                        <span class="option-flex">
+                            <span class="menu-collapsed">Clear Cache</span>
+                            <span class="shortcut">C</span>
+                        </span>
+                    </span>
+                </a>
+
+                <a class="nav-link" href="">
+                    <span class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="menu-icon menu-record"></span>
+                        <span class="menu-collapsed">Record Screen <span class="badge badge-pill badge-primary ml-2">!</span></span>
+                    </span>
+                </a>
+            </li><!-- Smaller devices menu END -->
+            <!--Dropdown-->
+            <div class="btn-group dropup dropup-company">
+                <button class="company-dropdown dropdown-toggle" type="button" id="dropdownMenuMobile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="d-flex company-details">
+                    <span class="company-image"></span>
+                    <span class="company-text">Alberta Pacific</span>
+                </span>
+                    <span class="company-dots"></span>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuMobile">
+                    <button class="dropdown-item" type="button">Log Out</button>
+                </div>
+            </div>
+        </ul>
+    </div>
+</nav><!-- NavBar END -->
+
+
 <!-- Sidebar -->
 <div id="sidebar-container" class="sidebar-expanded d-none d-md-block"><!-- d-* hiddens the Sidebar in smaller devices. Its itens can be kept on the Navbar 'Menu' -->
     <!-- Bootstrap List Group -->
@@ -19,7 +98,7 @@
                 <span class="menu-collapsed">History</span>
             </span>
         </a>
-        <a href="#" class="list-group-item list-group-item-action">
+        <a href="single.html" class="list-group-item list-group-item-action">
             <span class="d-flex w-100 justify-content-start align-items-center">
                 <span class="menu-icon menu-single"></span>
                 <span class="menu-collapsed">Single Prediction</span>

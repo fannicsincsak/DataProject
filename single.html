@@ -26,10 +26,13 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw==" crossorigin="anonymous" />
         <!--Tooltips-->
         <link href="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.2.7/dist/jBox.all.min.css" rel="stylesheet">
+        <!--Data Table-->
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.css">
+        <!--Chart CSS 2-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.11.4/chartist.min.css" integrity="sha512-V0+DPzYyLzIiMiWCg3nNdY+NyIiK9bED/T1xNBj08CaIUyK3sXRpB26OUCIzujMevxY9TRJFHQIxTwgzb0jVLg==" crossorigin="anonymous" />
     </head>
 
     <body>
-
 
         <div class="container-fluid p-0">
             <div class="row" id="body-row">
@@ -44,200 +47,193 @@
                         <div class="header-title">Single/One Sample Prediction</div>
                     </div><!--Header Ends-->
 
+
                     <!--Paste your components below-->
 
                     <!--Main Title-->
                     <div class="section-title">This is the title of the below form</div>
                     <!--Form-->
-                    <div class="form-component">
-                        <!--Subtitle-->
-                        <div class="title-row">
-                            <div class="component-title">Subtitle</div>
-                        </div>
-
-                        <!--Form starts here-->
-                        <form>
-                            <div class="col-md-12">
-                                <!--We start adding the form elements from here-->
-
-                                <!--2 Inputs next to each other-->
-                                <div class="row">
-                                    <!--1/2 of the Row-->
-                                    <div class="col-md-6">
-                                        <!--Input #1 - on the left-->
-                                        <div class="form-group">
-                                            <!--Label with Tooltip-->
-                                            <div class="label-with-tooltip d-flex">
-                                                <label for="exampleInput1">Input Label #1</label>
-                                                <div id="Tooltip-1" class="custom-tooltip"></div>
-                                            </div><!--Label with Tooltip Ends-->
-                                            <input type="text" class="form-control" id="exampleInput1" aria-describedby="emailHelp" placeholder="Placeholder for Input #1">
-                                        </div>
-                                    </div>
-                                    <!--2/2 of the Row-->
-                                    <div class="col-md-6">
-                                        <!--Input #2 - on the right-->
-                                        <div class="form-group">
-                                            <label for="exampleInput2">Input Label #2</label>
-                                            <input type="text" class="form-control" id="exampleInput2" aria-describedby="emailHelp" placeholder="Placeholder for Input #2">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!--2 Selects next to each other-->
-                                <div class="row">
-                                    <!--1/2 of the Row-->
-                                    <div class="col-md-6">
-                                        <!--Select #1 - on the left-->
-                                        <div class="form-group">
-                                            <label class="select-label" for="id_label_single_1">
-                                                Select Label #1
-                                                <select class="js-example-basic-single select-2-normal form-control" id="id_label_single_1">
-                                                    <option value="one" selected="selected" disabled="disabled">Select</option>
-                                                    <option value="two">Option 1</option>
-                                                    <option value="three">Option 2</option>
-                                                    <option value="four">Option 3</option>
-                                                    <option value="five">Option 4</option>
-                                                    <option value="six">Option 5</option>
-                                                    <option value="seven">Option 6</option>
-                                                </select>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <!--2/2 of the Row-->
-                                    <div class="col-md-6">
-                                        <!--Select #2 - on the right-->
-                                        <div class="form-group">
-                                            <label class="select-label" for="id_label_single_2">
-                                                Select Label #2
-                                                <select class="js-example-basic-single select-2-normal form-control" id="id_label_single_2">
-                                                    <option value="one" selected="selected" disabled="disabled">Select</option>
-                                                    <option value="two">Option 1</option>
-                                                    <option value="three">Option 2</option>
-                                                    <option value="four">Option 3</option>
-                                                    <option value="five">Option 4</option>
-                                                    <option value="six">Option 5</option>
-                                                    <option value="seven">Option 6</option>
-                                                </select>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!--One Input and One Select next to each other-->
-                                <div class="row">
-                                    <!--1/2 of the Row-->
-                                    <div class="col-md-6">
-                                        <!--Input #1 - on the left-->
-                                        <div class="form-group">
-                                            <!--Label with Tooltip-->
-                                            <div class="label-with-tooltip d-flex">
-                                                <label for="exampleInput3">Input Label on the Left</label>
-                                                <div id="Tooltip-2" class="custom-tooltip"></div>
-                                            </div><!--Label with Tooltip Ends-->
-                                            <input type="text" class="form-control" id="exampleInput3" aria-describedby="emailHelp" placeholder="Placeholder for Input #1">
-                                        </div>
-                                    </div>
-                                    <!--2/2 of the Row-->
-                                    <div class="col-md-6">
-                                        <!--Select #1 - on the right-->
-                                        <div class="form-group">
-                                            <label class="select-label" for="id_label_single_3">
-                                                Select No Search
-                                                <select class="js-example-basic-single select-2-normal select2-no-search form-control" id="id_label_single_3">
-                                                    <option value="one" selected="selected" disabled="disabled">Select</option>
-                                                    <option value="two">Option 1</option>
-                                                    <option value="three">Option 2</option>
-                                                    <option value="four">Option 3</option>
-                                                    <option value="five">Option 4</option>
-                                                    <option value="six">Option 5</option>
-                                                    <option value="seven">Option 6</option>
-                                                </select>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!--Increase and Decrease Input and Range Slider-->
-                                <div class="row">
-                                    <!--1/2 of the Row-->
-                                    <div class="col-md-6">
-                                        <!--Increase and Decrease on the left-->
-                                        <div class="form-group inc-dec-input">
-                                            <label for="exampleInput4">Increase and Decrease Input</label>
-                                            <div class="controls">
-                                                <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
-                                                <input type="number" id="exampleInput4" value="0" />
-                                                <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--2/2 of the Row-->
-                                    <div class="col-md-6">
-                                        <!--Range Slider on the right-->
-                                        <div class="form-group">
-                                            <label for="range">Range Slider</label>
-                                            <div class="range-slider" style='--min:0; --max:100; --value:75; --text-value:"75"; --suffix:"%"'>
-                                                <input id="range" type="range" min="0" max="100" value="75" oninput="this.parentNode.style.setProperty('--value',this.value); this.parentNode.style.setProperty('--text-value', JSON.stringify(this.value))">
-                                                <output></output>
-                                                <div class='range-slider__progress'></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!--Date Pickers-->
-                                <div class="row">
-                                    <!--1/2 of the Row-->
-                                    <div class="col-md-6">
-                                        <!--Datepicker #1 - on the left-->
-                                        <div class="form-group">
-                                            <label for="datepicker1">Datepicker Single</label>
-                                            <input type="text" id="datepicker1" class="form-control" placeholder="Select a Date">
-                                        </div>
-                                    </div>
-                                    <!--2/2 of the Row
-                                    We want to have 2 Datepickers next to each other, therefore we add a new row and 2 more col-md-6 divs-->
-                                    <div class="col-md-6">
-                                        <div class="row">
-                                            <!--DatePicker 1/2-->
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label for="datepicker2">Start Date</label>
-                                                    <input type="text" id="datepicker2" class="form-control" placeholder="Select Start Date">
-                                                </div>
-                                            </div>
-                                            <!--DatePicker 2/2-->
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label for="datepicker3">End Date</label>
-                                                    <input type="text" id="datepicker3" class="form-control" placeholder="Select End Date">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-
-
-                                <!--Checkbox-->
-
-
-
-                                <!--Select Dates-->
-
-
-                                <!--Button in a new row-->
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <button type="submit" class="button-main">Make Sample Prediction</button>
-                                    </div>
-                                </div>
-
-
+                    <div class="container-fluid">
+                        <div class="form-component">
+                            <!--Subtitle-->
+                            <div class="title-row">
+                                <div class="component-title">Subtitle</div>
                             </div>
-                        </form><!--Form ends here-->
+
+                            <!--Form starts here-->
+                            <form>
+                                <div class="col-md-12">
+                                    <!--We start adding the form elements from here-->
+
+                                    <!--2 Inputs next to each other-->
+                                    <div class="row">
+                                        <!--1/2 of the Row-->
+                                        <div class="col-xl-6 col-lg-12 col-md-12">
+                                            <!--Input #1 - on the left-->
+                                            <div class="form-group">
+                                                <!--Label with Tooltip-->
+                                                <div class="label-with-tooltip d-flex">
+                                                    <label for="exampleInput1">Input Label #1</label>
+                                                    <div id="Tooltip-1" class="custom-tooltip"></div>
+                                                </div><!--Label with Tooltip Ends-->
+                                                <input type="text" class="form-control" id="exampleInput1" aria-describedby="emailHelp" placeholder="Placeholder for Input #1">
+                                            </div>
+                                        </div>
+                                        <!--2/2 of the Row-->
+                                        <div class="col-xl-6 col-lg-12 col-md-12">
+                                            <!--Input #2 - on the right-->
+                                            <div class="form-group">
+                                                <label for="exampleInput2">Input Label #2</label>
+                                                <input type="text" class="form-control" id="exampleInput2" aria-describedby="emailHelp" placeholder="Placeholder for Input #2">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--2 Selects next to each other-->
+                                    <div class="row">
+                                        <!--1/2 of the Row-->
+                                        <div class="col-xl-6 col-lg-12 col-md-12">
+                                            <!--Select #1 - on the left-->
+                                            <div class="form-group">
+                                                <label class="select-label" for="id_label_single_1">
+                                                    Select Label #1
+                                                    <select class="js-example-basic-single select-2-normal form-control" id="id_label_single_1">
+                                                        <option value="one" selected="selected" disabled="disabled">Select</option>
+                                                        <option value="two">Option 1</option>
+                                                        <option value="three">Option 2</option>
+                                                        <option value="four">Option 3</option>
+                                                        <option value="five">Option 4</option>
+                                                        <option value="six">Option 5</option>
+                                                        <option value="seven">Option 6</option>
+                                                    </select>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <!--2/2 of the Row-->
+                                        <div class="col-xl-6 col-lg-12 col-md-12">
+                                            <!--Select #2 - on the right-->
+                                            <div class="form-group">
+                                                <label class="select-label" for="id_label_single_2">
+                                                    Select Label #2
+                                                    <select class="js-example-basic-single select-2-normal form-control" id="id_label_single_2">
+                                                        <option value="one" selected="selected" disabled="disabled">Select</option>
+                                                        <option value="two">Option 1</option>
+                                                        <option value="three">Option 2</option>
+                                                        <option value="four">Option 3</option>
+                                                        <option value="five">Option 4</option>
+                                                        <option value="six">Option 5</option>
+                                                        <option value="seven">Option 6</option>
+                                                    </select>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--One Input and One Select next to each other-->
+                                    <div class="row">
+                                        <!--1/2 of the Row-->
+                                        <div class="col-xl-6 col-lg-12 col-md-12">
+                                            <!--Input #1 - on the left-->
+                                            <div class="form-group">
+                                                <!--Label with Tooltip-->
+                                                <div class="label-with-tooltip d-flex">
+                                                    <label for="exampleInput3">Input Label on the Left</label>
+                                                    <div id="Tooltip-2" class="custom-tooltip"></div>
+                                                </div><!--Label with Tooltip Ends-->
+                                                <input type="text" class="form-control" id="exampleInput3" aria-describedby="emailHelp" placeholder="Placeholder for Input #1">
+                                            </div>
+                                        </div>
+                                        <!--2/2 of the Row-->
+                                        <div class="col-xl-6 col-lg-12 col-md-12">
+                                            <!--Select #1 - on the right-->
+                                            <div class="form-group">
+                                                <label class="select-label" for="id_label_single_3">
+                                                    Select No Search
+                                                    <select class="js-example-basic-single select-2-normal select2-no-search form-control" id="id_label_single_3">
+                                                        <option value="one" selected="selected" disabled="disabled">Select</option>
+                                                        <option value="two">Option 1</option>
+                                                        <option value="three">Option 2</option>
+                                                        <option value="four">Option 3</option>
+                                                        <option value="five">Option 4</option>
+                                                        <option value="six">Option 5</option>
+                                                        <option value="seven">Option 6</option>
+                                                    </select>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--Increase and Decrease Input and Range Slider-->
+                                    <div class="row">
+                                        <!--1/2 of the Row-->
+                                        <div class="col-xl-6 col-lg-12 col-md-12">
+                                            <!--Increase and Decrease on the left-->
+                                            <div class="form-group inc-dec-input">
+                                                <label for="exampleInput4">Increase and Decrease Input</label>
+                                                <div class="controls">
+                                                    <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                                                    <input type="number" id="exampleInput4" value="0" />
+                                                    <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--2/2 of the Row-->
+                                        <div class="col-xl-6 col-lg-12 col-md-12">
+                                            <!--Range Slider on the right-->
+                                            <div class="form-group">
+                                                <label for="range">Range Slider</label>
+                                                <div class="range-slider" style='--min:0; --max:100; --value:75; --text-value:"75"; --suffix:"%"'>
+                                                    <input id="range" type="range" min="0" max="100" value="75" oninput="this.parentNode.style.setProperty('--value',this.value); this.parentNode.style.setProperty('--text-value', JSON.stringify(this.value))">
+                                                    <output></output>
+                                                    <div class='range-slider__progress'></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--Date Pickers-->
+                                    <div class="row">
+                                        <!--1/2 of the Row-->
+                                        <div class="col-xl-6 col-lg-12 col-md-12">
+                                            <!--Datepicker #1 - on the left-->
+                                            <div class="form-group">
+                                                <label for="datepicker1">Datepicker Single</label>
+                                                <input type="text" id="datepicker1" class="form-control" placeholder="Select a Date">
+                                            </div>
+                                        </div>
+                                        <!--2/2 of the Row
+                                        We want to have 2 Datepickers next to each other, therefore we add a new row and 2 more col-md-6 divs-->
+                                        <div class="col-xl-6 col-lg-12 col-md-12">
+                                            <div class="row">
+                                                <!--DatePicker 1/2-->
+                                                <div class="col-xl-6 col-lg-12 col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="datepicker2">Start Date</label>
+                                                        <input type="text" id="datepicker2" class="form-control" placeholder="Select Start Date">
+                                                    </div>
+                                                </div>
+                                                <!--DatePicker 2/2-->
+                                                <div class="col-xl-6 col-lg-12 col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="datepicker3">End Date</label>
+                                                        <input type="text" id="datepicker3" class="form-control" placeholder="Select End Date">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--Button in a new row-->
+                                    <div class="row">
+                                        <div class="col-xl-4 col-lg-5 col-md-12">
+                                            <button type="submit" class="button-main">Make Sample Prediction</button>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </form><!--Form ends here-->
+                        </div>
                     </div>
 
                     <!--Don't paste components below-->
@@ -268,6 +264,17 @@
     <script src="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.2.7/dist/jBox.all.min.js"></script>
     <!--Customize Tooltips-->
     <script type="text/javascript" src="scripts/tooltips.js"></script>
+    <!--Data Table-->
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.js"></script>
+    <!--Chart JS 2.0-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.11.4/chartist.min.js" integrity="sha512-9rxMbTkN9JcgG5euudGbdIbhFZ7KGyAuVomdQDI9qXfPply9BJh0iqA7E/moLCatH2JD4xBGHwV6ezBkCpnjRQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartist-plugin-legend/0.6.2/chartist-plugin-legend.js" integrity="sha512-CBRJixgx8naN06wpNL+R/devoQkEHZy+DET78kCXZx4zzTKotHfdP2r469yQ4Kme2qnxF51Jl+X5khe+OC6S/A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartist-plugin-legend/0.6.2/chartist-plugin-legend.min.js.map" ></script>
+    <!--Custom Chart JS-->
+    <script type="text/javascript" src="scripts/charts.js"></script>
+    <!--Resize Sensor-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/css-element-queries/1.2.3/ResizeSensor.js" integrity="sha512-TH1YiqLIcRRGn+EOLBXfHtoZfGaPGROB6sEcSC0TK+72bc7Xhn9P/JqaSX+3jw3mxOSdXRuAIZjedCJQtmYfWA==" crossorigin="anonymous"></script>
+
 
     <!--Necessary in terms of Selects -->
     <script>
@@ -322,6 +329,13 @@
         $( function() {
             $( "#datepicker3" ).datepicker();
         } );
+    </script>
+
+    <!--Tables-->
+    <script>
+        $('#button-collapse').on('click', function () {
+            $('#simpleTable').DataTable().columns.adjust();
+        })
     </script>
 
 </html>
