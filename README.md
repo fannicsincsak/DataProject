@@ -15,7 +15,7 @@
 
 [7. Dependencies](#7-dependencies)
 
-[78 Issues and Future Tasks](#8-issues-and-future-tasks)
+[8. Issues and Future Tasks](#8-issues-and-future-tasks)
 
 # 1. Pages
 **Main Pages**
