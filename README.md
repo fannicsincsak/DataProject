@@ -448,10 +448,15 @@ And that's it.
 # 5. Single One Sample Prediction Page
 ## Components that we use:
 A. Input,
+
 B. Select,
+
 C Select with search bar,
+
 D. Increase and decrease input,
+
 E. Range slider,
+
 F. Date Picker.
 
 ### A. Input
