@@ -26,7 +26,7 @@
 
 [5. Dependencies](#5-dependencies)
 
-[6. Issues and TODOs](#6-issues-and-todoes)
+[6. Issues and Future Tasks](#6-issues-and-future-tasks)
 
 # 1. Batch Prediction Page
 
@@ -444,4 +444,4 @@ And that's it.
 
 # 5. Dependencies
 
-# 6. Issues and TODOs
+# 6. Issues and Future Tasks
