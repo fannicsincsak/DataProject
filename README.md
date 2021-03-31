@@ -507,6 +507,7 @@ You can see that I've added an extra class to the select called "select2-no-sear
     </label>
 </div>
 ```
+
 You can add js to the end of the page between <script>add here</script> tags. You can see that I have used the "select2-no-search" class and the minimumResultsForSearch: -1 command hides the search bar.
 ```javascritpt
 $(".select2-no-search").select2({
@@ -516,9 +517,16 @@ $(".select2-no-search").select2({
 ```
 
 ### D. Increase and decrease input
+You only have to make sure that the for's value in the label ("exampleInput4") matches the id's value in the input (they have to be the same).
 ```HTML
-
-
+<div class="form-group inc-dec-input">
+    <label for="exampleInput4">Increase and Decrease Input</label>
+    <div class="controls">
+        <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+        <input type="number" id="exampleInput4" value="0" />
+        <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+    </div>
+</div>
 ```
 
 ### E. Range slider
