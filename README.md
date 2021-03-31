@@ -20,13 +20,13 @@
 
 [2. Historical Prediction Page](#2-historical-prediction-page)
 
-[3. Single/One Sample Prediction Page]
+[3. Single/One Sample Prediction Page](#3-single-one-sample-prediction-page)
 
-[4. Bootstrap Use Cases]
+[4. Bootstrap Use Cases](#4-bootstrap-use-cases)
 
-[5. Dependencies]
+[5. Dependencies](#5-dependencies)
 
-[6. Issues & TODOs]
+[6. Issues & TODOs](#6-issues-todoes)
 
 # 1. Batch Prediction Page
 
@@ -437,3 +437,5 @@ therefore you would end up with this:
 new Chartist.Bar('#chart6', dataBarChart2, options, responsiveOptions);
 ```
 And that's it.
+
+# 3. Single/One Sample Prediction Page
