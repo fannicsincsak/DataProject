@@ -11,7 +11,9 @@
 
 **Included Pages**
 * leftNav.html: includes the left navigation and the mobile menu, used on all pages (except login and forgot password)
-* 
+* simpleTable.html: includes a simple table (can be used on batch.html, single.html and history.html) 
+* Chart HTMLs: simpleBarChart.html, stackedBarChart.html, horizontalBarChart.html, simpleLineChart.html, areaLineChart.html (can be used on batch.html, single.html and history.html)
+* fourBoxes.html: 4 boxes next to each other, this can be used anywhere (no dependencies)
 
 ### History Page Contents
 [1. Structural Overview](#1-structural-overview)
