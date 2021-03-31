@@ -35,13 +35,13 @@
 
 # 3. Historical Prediction Page
 ### History Page Contents
-[3.1. Structural Overview](#3-1-structural-overview)
+[3.1. Structural Overview](#31-structural-overview)
 
-[3.2. HTML Structural Settings](#3-2-html-structural-settings)
+[3.2. HTML Structural Settings](#32-html-structural-settings)
 
-[3.3. HTML Components](#3-3-html-components)
+[3.3. HTML Components](#33-html-components)
 
-[3.4. Javascript and Data files](#3-4-javascript-and-data-files)
+[3.4. Javascript and Data files](#34-javascript-and-data-files)
 
 ## 3.1. Structural Overview
 We have 4 file types: 
