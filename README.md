@@ -21,6 +21,7 @@
 3. Single/One Sample Prediction Page
 4. Bootstrap Use Cases
 5. Dependencies
+6. Issues & TODOs
 
 # Historical Prediction Page
 ### History Page Contents
