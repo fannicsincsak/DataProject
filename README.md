@@ -446,6 +446,49 @@ new Chartist.Bar('#chart6', dataBarChart2, options, responsiveOptions);
 And that's it.
 
 # 5. Single One Sample Prediction Page
+## Components that we use:
+A. Input,
+B. Select,
+C Select with search bar,
+D. Increase and decrease input,
+E. Range slider,
+F. Date Picker.
+
+### A. Input
+```HTML
+
+
+```
+
+### B. Select
+```HTML
+
+
+```
+
+### C. Select with search bar
+```HTML
+
+
+```
+
+### D. Increase and decrease input
+```HTML
+
+
+```
+
+### E. Range slider
+```HTML
+
+
+```
+
+### F. Date Picker
+```HTML
+
+
+```
 
 # 6. Bootstrap Use Cases
 
