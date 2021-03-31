@@ -439,3 +439,9 @@ new Chartist.Bar('#chart6', dataBarChart2, options, responsiveOptions);
 And that's it.
 
 # 3. Single/One Sample Prediction Page
+
+# 4. Bootstrap Use Cases
+
+# 5. Dependencies
+
+# 6. Issues & TODOs
