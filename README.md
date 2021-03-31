@@ -566,12 +566,15 @@ Also, everything in the backend folder is connected to this component.
 <script type="text/javascript" src="scripts/uploader-config.js"></script>
 ```
 
-### Title
+### Tooltips: Used on the Single Prediction Page
 ```HTML
-<!--CSS Dependency-->
+<!--JS Dependencies-->
 
 <!--JS Dependency-->
+<script src="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.2.7/dist/jBox.all.min.js"></script>
 
+<!--Customize Tooltips-->
+<script type="text/javascript" src="scripts/tooltips.js"></script>
 ```
 
 ### Title
