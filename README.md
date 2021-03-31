@@ -577,12 +577,10 @@ Also, everything in the backend folder is connected to this component.
 <script type="text/javascript" src="scripts/tooltips.js"></script>
 ```
 
-### Title
+### Range Slider: Used on the Single Prediction Page
 ```HTML
 <!--CSS Dependency-->
-
-<!--JS Dependency-->
-
+<link href="css/ui-range.css" rel="stylesheet" type="text/css" media="all">
 ```
 
 # 8. Issues and Future Tasks
