@@ -452,5 +452,15 @@ And that's it.
 # 7. Dependencies
 
 # 8. Issues and Future Tasks
+### Issues and Future Tasks Contents
+[8.1. Issues](#81-issues)
 
+[8.2. Future Tasks](#82-future-tasks)
 
+## 8.1. Issues
+* Menu items do not turn into their active states when clicked and when user stays on one of the pages.
+* On smaller screen sizes (especially in terms of width) chart legends (at the bottom of the chart) do not work properly.
+
+## 8.2. Future Tasks
+* The data include method that we use to include the HTML components might not be optimal because it might slow down the loading time (scripts/include.js)
+* It might be worth populating the chart data files into another file (scripts/charts.js)
