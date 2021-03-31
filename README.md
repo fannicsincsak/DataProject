@@ -3,17 +3,19 @@
 # Table of Contents
 [1. Pages](#1-pages)
 
-[2. Batch Prediction Page](#2-batch-prediction-page)
+[2. Structural Overview](#2-structural-overview)
 
-[3. Historical Prediction Page](#3-historical-prediction-page)
+[3. Batch Prediction Page](#3-batch-prediction-page)
 
-[4. Single/One Sample Prediction Page](#4-single-one-sample-prediction-page)
+[4. Historical Prediction Page](#4-historical-prediction-page)
 
-[5. Bootstrap Use Cases](#5-bootstrap-use-cases)
+[5. Single/One Sample Prediction Page](#5-single-one-sample-prediction-page)
 
-[6. Dependencies](#6-dependencies)
+[6. Bootstrap Use Cases](#6-bootstrap-use-cases)
 
-[7. Issues and Future Tasks](#7-issues-and-future-tasks)
+[7. Dependencies](#7-dependencies)
+
+[78 Issues and Future Tasks](#8-issues-and-future-tasks)
 
 # 1. Pages
 **Main Pages**
@@ -30,20 +32,13 @@
 * Chart HTMLs: simpleBarChart.html, stackedBarChart.html, horizontalBarChart.html, simpleLineChart.html, areaLineChart.html (can be used on batch.html, single.html and history.html)
 * fourBoxes.html: 4 boxes next to each other, this can be used anywhere (no dependencies)
 
+# 2. Structural Overview
+### Structural Overiview Contents
 
-# 2. Batch Prediction Page
+[2.1. HTML Components](#21-html-components)
 
-# 3. Historical Prediction Page
-### History Page Contents
-[3.1. Structural Overview](#31-structural-overview)
-
-[3.2. HTML Structural Settings](#32-html-structural-settings)
-
-[3.3. HTML Components](#33-html-components)
-
-[3.4. Javascript and Data files](#34-javascript-and-data-files)
-
-## 3.1. Structural Overview
+[2.2. Javascript and Data files](#22-javascript-and-data-files)
+## 2.1. Structural Overview
 We have 4 file types: 
 * Main HTML files,
 * Components (HTML files that we include in main HTML files),
@@ -62,7 +57,7 @@ These javascript files do 2 separate things:
 1. They control some aspects of the look and feel of these components, 
 2. and more importantly they include the **data**.
 
-## 3.2. HTML Structural Settings
+## 2.2. HTML Structural Settings
 You will only need tto edit a dedicated section in each HTML files. The blank files that you will need to edit structurally look the same. Each one of these include: 
 A. A Header area at the top, and
 B. A section where you can copy-paste your components.
@@ -151,7 +146,16 @@ You have to paste the components that you select right below the Header area bet
 <!--Don't paste components below-->
 ```
 
-## 3.3. HTML Components
+# 3. Batch Prediction Page
+
+# 4. Historical Prediction Page
+### History Page Contents
+
+[3.1. HTML Components](#31-html-components)
+
+[3.2. Javascript and Data files](#32-javascript-and-data-files)
+
+## 3.1. HTML Components
 Right now you can only use 6 types of components:
 A. Simple Table,
 B. Simple Bar Chart (ID in scripts/chart.js: #chart1),
@@ -239,7 +243,7 @@ Therefore the code that you use would look like this:
 <!--Don't paste components below-->
 ```
 
-## 3.4. Javascript and Data Files
+## 3.2. Javascript and Data Files
 
 ### Table Component
 The Simple Table Component is connected to the **scripts/tables.js** file.
@@ -441,10 +445,12 @@ new Chartist.Bar('#chart6', dataBarChart2, options, responsiveOptions);
 ```
 And that's it.
 
-# 4. Single One Sample Prediction Page
+# 5. Single One Sample Prediction Page
 
-# 5. Bootstrap Use Cases
+# 6. Bootstrap Use Cases
 
-# 6. Dependencies
+# 7. Dependencies
 
-# 7. Issues and Future Tasks
+# 8. Issues and Future Tasks
+
+
