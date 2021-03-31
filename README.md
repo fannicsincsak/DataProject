@@ -34,10 +34,10 @@
 
 # 2. Structural Overview
 ### Structural Overiview Contents
+[2.1. Structural Overview](#21-structural-overview)
 
-[2.1. HTML Components](#21-html-components)
+[2.2. HTML Structural Settings](#22-html-structural-settings)
 
-[2.2. Javascript and Data files](#22-javascript-and-data-files)
 ## 2.1. Structural Overview
 We have 4 file types: 
 * Main HTML files,
