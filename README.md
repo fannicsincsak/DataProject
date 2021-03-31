@@ -451,13 +451,15 @@ A. Input,
 
 B. Select,
 
-C Select with search bar,
+C. Select with search bar,
 
 D. Increase and decrease input,
 
 E. Range slider,
 
-F. Date Picker.
+F. Date Picker,
+
+G. Tooltips.
 
 ### A. Input
 ```HTML
