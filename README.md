@@ -450,6 +450,13 @@ And that's it.
 # 6. Bootstrap Use Cases
 
 # 7. Dependencies
+### Title
+```HTML
+<!--CSS Dependency-->
+
+<!--JS Dependency-->
+
+```
 
 # 8. Issues and Future Tasks
 ### Issues and Future Tasks Contents
