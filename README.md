@@ -35,15 +35,15 @@
 
 # 3. Historical Prediction Page
 ### History Page Contents
-[1. Structural Overview](#1-structural-overview)
+[3.1. Structural Overview](#1-structural-overview)
 
-[2. HTML Structural Settings](#2-html-structural-settings)
+[3.2. HTML Structural Settings](#2-html-structural-settings)
 
-[3. HTML Components](#3-html-components)
+[3.3. HTML Components](#3-html-components)
 
-[4. Javascript and Data files](#4-javascript-and-data-files)
+[3.4. Javascript and Data files](#4-javascript-and-data-files)
 
-## 1. Structural Overview
+## 3.1. Structural Overview
 We have 4 file types: 
 * Main HTML files,
 * Components (HTML files that we include in main HTML files),
@@ -62,7 +62,7 @@ These javascript files do 2 separate things:
 1. They control some aspects of the look and feel of these components, 
 2. and more importantly they include the **data**.
 
-## 2. HTML Structural Settings
+## 3.2. HTML Structural Settings
 You will only need tto edit a dedicated section in each HTML files. The blank files that you will need to edit structurally look the same. Each one of these include: 
 A. A Header area at the top, and
 B. A section where you can copy-paste your components.
@@ -151,7 +151,7 @@ You have to paste the components that you select right below the Header area bet
 <!--Don't paste components below-->
 ```
 
-## 3. HTML Components
+## 3.3. HTML Components
 Right now you can only use 6 types of components:
 A. Simple Table,
 B. Simple Bar Chart (ID in scripts/chart.js: #chart1),
@@ -239,7 +239,7 @@ Therefore the code that you use would look like this:
 <!--Don't paste components below-->
 ```
 
-## 4. Javascript and Data Files
+## 3.4. Javascript and Data Files
 
 ### Table Component
 The Simple Table Component is connected to the **scripts/tables.js** file.
