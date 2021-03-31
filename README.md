@@ -1,6 +1,19 @@
 # DataProject
 
-### Contents
+# Pages
+**Main Pages**
+* Batch Prediction = batch.html
+* Historical Prediction = history.html
+* Single/One Sample Prediction = single.html
+* Login = login.html
+* Forgot Password = forgot-password.html
+* Empty historical prediction file to experiment with the components = index.html
+
+**Included Pages**
+* leftNav.html: includes the left navigation and the mobile menu, used on all pages (except login and forgot password)
+* 
+
+### History Page Contents
 [1. Structural Overview](#1-structural-overview)
 
 [2. HTML Structural Settings](#2-html-structural-settings)
