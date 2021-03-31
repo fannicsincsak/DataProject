@@ -17,11 +17,16 @@
 
 # Table of Contents
 [1. Batch Prediction Page](#1-batch-prediction-page)
+
 [2. Historical Prediction Page](#2-historical-prediction-page)
-3. Single/One Sample Prediction Page
-4. Bootstrap Use Cases
-5. Dependencies
-6. Issues & TODOs
+
+[3. Single/One Sample Prediction Page]
+
+[4. Bootstrap Use Cases]
+
+[5. Dependencies]
+
+[6. Issues & TODOs]
 
 # 1. Batch Prediction Page
 
