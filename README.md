@@ -530,21 +530,26 @@ You only have to make sure that the for's value in the label ("exampleInput4") m
 ```
 
 ### E. Range slider
+You only have to make sure that the for's value in the label ("range") matches the id's value in the input (they have to be the same). You can also control the mininimum and maximum values in the div (having the "range-slider" class) by editing the values connected to the style attribute. You also have to re-write the input's min and max values.  
 ```HTML
-
-
+<div class="form-group">
+    <label for="range">Range Slider</label>
+    <div class="range-slider" style='--min:0; --max:100; --value:75; --text-value:"75"; --suffix:"%"'>
+        <input id="range" type="range" min="0" max="100" value="75" oninput="this.parentNode.style.setProperty('--value',this.value); this.parentNode.style.setProperty('--text-value', JSON.stringify(this.value))">
+        <output></output>
+        <div class='range-slider__progress'></div>
+    </div>
+</div>
 ```
 
 ### F. Date Picker
 ```HTML
-
 
 ```
 
 
 ### G. Tooltips
 ```HTML
-
 
 ```
 
