@@ -450,6 +450,69 @@ And that's it.
 # 6. Bootstrap Use Cases
 
 # 7. Dependencies
+### Font: Roboto
+```HTML
+<!--2 CSS Dependencies-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+```
+
+### Bootstrap: to ensure responsiveness
+```HTML
+<!--3 CSS Dependencies-->
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/bootstrap-grid.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/bootstrap-reboot.min.css" rel="stylesheet" type="text/css" media="all">
+```
+
+### Our Custom CSS file: to apply custom styling
+```HTML
+<!--CSS Dependency-->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+```
+
+### Data Tables CSS and JS
+```HTML
+<!--CSS Dependency-->
+ <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.css">
+
+<!--JS Dependency-->
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.js"></script>
+```
+
+### Charts JS files
+```HTML
+<!--3 JS Dependencies-->
+
+<!--Chartist JS file-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.11.4/chartist.min.js"></script>
+
+<!--Chartist Legend JS file-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chartist-plugin-legend/0.6.2/chartist-plugin-legend.js"></script>
+
+<!--Chartist Legend JS map file-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chartist-plugin-legend/0.6.2/chartist-plugin-legend.min.js.map" ></script>
+
+```
+
+### Title
+```HTML
+<!--CSS Dependency-->
+
+<!--JS Dependency-->
+
+```
+
+
+### Title
+```HTML
+<!--CSS Dependency-->
+
+<!--JS Dependency-->
+
+```
+
+
 ### Title
 ```HTML
 <!--CSS Dependency-->
