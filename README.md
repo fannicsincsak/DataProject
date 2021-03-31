@@ -1,6 +1,29 @@
 # DataProject
 
-### Contents
+# Pages
+**Main Pages**
+* Batch Prediction = batch.html
+* Historical Prediction = history.html
+* Single/One Sample Prediction = single.html
+* Login = login.html
+* Forgot Password = forgot-password.html
+* Empty historical prediction file to experiment with the components = index.html
+
+**Included Pages**
+* leftNav.html: includes the left navigation and the mobile menu, used on all pages (except login and forgot password)
+* simpleTable.html: includes a simple table (can be used on batch.html, single.html and history.html) 
+* Chart HTMLs: simpleBarChart.html, stackedBarChart.html, horizontalBarChart.html, simpleLineChart.html, areaLineChart.html (can be used on batch.html, single.html and history.html)
+* fourBoxes.html: 4 boxes next to each other, this can be used anywhere (no dependencies)
+
+# Table of Contents
+1. Batch Prediction Page
+2. Historical Prediction Page
+3. Single/One Sample Prediction Page
+4. Bootstrap Use Cases
+5. Dependencies
+
+# Historical Prediction Page
+### History Page Contents
 [1. Structural Overview](#1-structural-overview)
 
 [2. HTML Structural Settings](#2-html-structural-settings)
