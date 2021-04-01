@@ -591,7 +591,36 @@ Input example:
 [6.2. Single Prediction Page Use Cases](#62-single-prediction-page-use-cases)
 
 ## 6.1. History Page Use Case
-
+On the history page all of the table and chart components have 100% width. But you can simply edit this and put these components next to each other by using 50% of the width. To do this please use the following code:
+```HTML
+<div class="row">
+    <!--1/2 of the Row-->
+    <div class="col-xl-6 col-lg-12 col-md-12">
+        <!--Paste your first component here - 50% - left side-->
+    </div>
+    <!--2/2 of the Row-->
+    <div class="col-xl-6 col-lg-12 col-md-12">
+        <!--Paste your second component here - 50% - right side-->
+    </div>
+</div>
+```
+Example:
+```HTML
+<div class="row">
+    <!--1/2 of the Row-->
+    <div class="col-xl-6 col-lg-12 col-md-12">
+        <!--Simple Table-->
+        <div class="section-title">This is a Simple Table</div>
+        <div data-include="simpleTable"></div>
+    </div>
+    <!--2/2 of the Row-->
+    <div class="col-xl-6 col-lg-12 col-md-12">
+        <!--Simple Bar Chart-->
+        <div class="section-title">This is a Simple Bar Chart</div>
+        <div data-include="simpleBarChart"></div>
+    </div>
+</div>
+```
 
 ## 6.2. Single Prediction Page Use Cases
 On the single prediction page we are using 2 different structures:
