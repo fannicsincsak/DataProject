@@ -586,7 +586,14 @@ Input example:
 ```
 
 # 6. Bootstrap Use Cases
+[6.1. History Page Use Case](#61-history-page-use-case)
 
+[6.2. Single Prediction Page Use Cases](#62-single-prediction-page-use-cases)
+
+## 6.1. History Page Use Case
+
+
+## 6.2. Single Prediction Page Use Cases
 
 
 # 7. Dependencies
