@@ -542,18 +542,52 @@ You only have to make sure that the for's value in the label ("range") matches t
 </div>
 ```
 
-### F. Date Picker
+### F. Date picker
+You have to set up the HTML and the Javascript too. 
+You  have to make sure that the for's value in the label ("datepicker1") matches the id's value in the input (they have to be the same).
+Also, make sure that the input's id ("datepicker1") matches the id in the javascript ($( "#datepicker1" )).
 ```HTML
-
+<div class="form-group">
+    <label for="datepicker1">Datepicker Single</label>
+    <input type="text" id="datepicker1" class="form-control" placeholder="Select a Date">
+</div>
+```
+Place the following javascipt at the bottom of the HTML.
+```javascript
+<script>
+    $( function() {
+        $( "#datepicker1" ).datepicker();
+    } );
+</script>
 ```
 
-
 ### G. Tooltips
+Except for simple labels:
 ```HTML
-
+<label for="exampleInput2">Input Label #2</label>
+```
+you can add the following HTML code to any form element:
+```HTML
+<div class="label-with-tooltip d-flex">
+    <label for="exampleInput1">Input Label #1</label>
+    <div id="Tooltip-1" class="custom-tooltip"></div>
+</div>
+```
+Input example:
+```HTML
+<div class="form-group">
+    <!--Label with Tooltip-->
+    <div class="label-with-tooltip d-flex">
+        <label for="exampleInput1">Input Label #1</label>
+        <div id="Tooltip-1" class="custom-tooltip"></div>
+    </div><!--Label with Tooltip Ends-->
+    <input type="text" class="form-control" id="exampleInput1" aria-describedby="emailHelp" placeholder="Placeholder for Input #1">
+</div>
 ```
 
 # 6. Bootstrap Use Cases
+
+
 
 # 7. Dependencies
 [7.1. General and Recurring](#71-general-and-recurring)
