@@ -885,3 +885,4 @@ Also, everything in the backend folder is connected to this component.
 ## 8.2. Future Tasks
 * The data include method that we use to include the HTML components might not be optimal because it might slow down the loading time (scripts/include.js)
 * It might be worth populating the chart data files into another file (scripts/charts.js)
+* Testing the pages in the different browsers (Firefox, Edge, Safari)
