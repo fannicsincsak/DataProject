@@ -594,6 +594,119 @@ Input example:
 
 
 ## 6.2. Single Prediction Page Use Cases
+On the single prediction page we are using 2 different structures:
+* Using 50% of the entire width or
+* Using 25% of the entire width
+
+**Using 50% of the entire width**
+The following structure will show your 2 component side by side on desktop devices and will show them below each other on smaller screen sizes or mobile devices.
+```HTML
+<!--This opens a new row-->
+<div class="row">
+    <!--1/2 of the Row-->
+    <div class="col-xl-6 col-lg-12 col-md-12">
+        <!--Copy-paste your first component here-->
+    </div>
+    <!--2/2 of the Row-->
+    <div class="col-xl-6 col-lg-12 col-md-12">
+        <!--Copy-paste your second component here-->
+    </div>
+</div>
+```
+Therefore, you can simply place 2 inputs next to each other by using the following code:
+```HTML
+<div class="row">
+    <!--1/2 of the Row-->
+    <div class="col-xl-6 col-lg-12 col-md-12">
+        <!--Input #1 - on the left-->
+        <div class="form-group">
+            <label for="exampleInput1">Input Label #2</label>
+            <input type="text" class="form-control" id="exampleInput1" aria-describedby="emailHelp" placeholder="Placeholder for Input #2">
+        </div>
+    </div>
+    <!--2/2 of the Row-->
+    <div class="col-xl-6 col-lg-12 col-md-12">
+        <!--Input #2 - on the right-->
+        <div class="form-group">
+            <label for="exampleInput2">Input Label #2</label>
+            <input type="text" class="form-control" id="exampleInput2" aria-describedby="emailHelp" placeholder="Placeholder for Input #2">
+        </div>
+    </div>
+</div>
+```
+
+**Using 25% of the entire width**
+The trick is that you would need to further half your 50% rows.
+```HTML
+<!--This opens a new row-->
+<div class="row">
+    <!--1/2 of the Row-->
+    <div class="col-xl-6 col-lg-12 col-md-12">
+        
+        <!--HERE IT STARTS-->
+        <!--We open a new row-->
+        <div class="row">
+            
+            <!--First 25%-->
+            <div class="col-xl-6 col-lg-12 col-md-12">
+                <!--Input #1 - on the left - first 25%-->
+                <div class="form-group">
+                    <label for="exampleInput1">Input Label #2</label>
+                    <input type="text" class="form-control" id="exampleInput1" aria-describedby="emailHelp" placeholder="Placeholder for Input #2">
+                </div>
+            </div>
+            
+            <!--Second 25%-->
+            <div class="col-xl-6 col-lg-12 col-md-12">
+                <!--Input #2 - on the right - second 25%-->
+                <div class="form-group">
+                    <label for="exampleInput2">Input Label #2</label>
+                    <input type="text" class="form-control" id="exampleInput2" aria-describedby="emailHelp" placeholder="Placeholder for Input #2">
+                </div>
+            </div>
+            
+        </div>
+        <!--HERE IT ENDS-->
+        
+    </div>
+    <!--2/2 of the Row-->
+    <div class="col-xl-6 col-lg-12 col-md-12">
+        <!--Copy-paste your second component here-->
+    </div>
+</div>
+```
+
+Example including 2 simple inputs next to each other (they will fill up 50% of the screen together, therefore one-by-one they equal 25%:
+```HTML
+<!--This opens a new row-->
+<div class="row">
+    <!--1/2 of the Row-->
+    <div class="col-xl-6 col-lg-12 col-md-12">
+        
+        <!--HERE IT STARTS-->
+        <!--We open a new row-->
+        <div class="row">
+            
+            <!--First 25%-->
+            <div class="col-xl-6 col-lg-12 col-md-12">
+                <!--Copy-paste your first component here-->
+            </div>
+            
+            <!--Second 25%-->
+            <div class="col-xl-6 col-lg-12 col-md-12">
+                <!--Copy-paste your second component here-->
+            </div>
+            
+        </div>
+        <!--HERE IT ENDS-->
+        
+    </div>
+    <!--2/2 of the Row-->
+    <div class="col-xl-6 col-lg-12 col-md-12">
+        <!--Copy-paste your second component here-->
+    </div>
+</div>
+```
 
 
 # 7. Dependencies
